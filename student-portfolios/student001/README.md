@@ -1,17 +1,24 @@
-# Student Portfolio - Student001
+# 👨‍🎓 Student Portfolio - Adam
 
-## Student Information
-**Nickname/PseudoNym:** Adam  
-**Interesting Tidbit and/or Aspiration:** I invented and hold a patent for "The Invisible Pool Toy".  It's a great toy, but not an economically viable business.
+---
 
-## Picture(s) or Pseudo-Picture(s)
+## 📋 Student Information
 
-Here is the pool toy:
+| **Field** | **Details** |
+|-----------|-------------|
+| **Name** | Adam |
+| **Student ID** | Student001 |
+| **Interesting Fact** | Inventor of "The Invisible Pool Toy" - hold a patent for it. |
+| **Interesting Fact2** | I like biking in cities and on gravel rail trails. |
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpU-_uS7d7czuDb5wBpTui3ahBAFzJAIMpJA&s" height="200">
+---
 
-and here is one of me :-)
+## 🖼️ Portfolio Images
 
-<img src="IMG_1783.png" height="200">
+### My Invention: The Invisible Pool Toy
+![The Invisible Pool Toy](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpU-_uS7d7czuDb5wBpTui3ahBAFzJAIMpJA&s)
+
+### Personal Photo
+![Adam - Student001](IMG_1783.png)
 
 
