@@ -12,6 +12,6 @@ Here is the pool toy:
 
 and here is one of me :-)
 
-<img src="IMG_1783.heic" height="200">
+<img src="IMG_1783.png" height="200">
 
 
