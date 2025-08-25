@@ -8,9 +8,10 @@
 
 Here is the pool toy:
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpU-_uS7d7czuDb5wBpTui3ahBAFzJAIMpJA&s" width="200" height="100">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpU-_uS7d7czuDb5wBpTui3ahBAFzJAIMpJA&s" height="200">
 
 and here is one of me :-)
 
+<img src="IMG_1783.heic" height="200">
 
 
