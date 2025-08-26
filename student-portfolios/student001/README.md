@@ -1,4 +1,4 @@
-# 👨‍🎓 Student Portfolio - Adam
+# 👨‍🎓 Student Portfolio Example - Adam
 
 ---
 
@@ -6,8 +6,7 @@
 
 | **Field** | **Details** |
 |-----------|-------------|
-| **Name** | Adam |
-| **Student ID** | Student001 |
+| **Nickname/Pseudonym** | Adam |
 | **Interesting Fact** | Inventor of "The Invisible Pool Toy" - hold a patent for it. |
 | **Interesting Fact2** | I like biking in cities and on gravel rail trails. |
 

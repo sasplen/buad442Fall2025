@@ -1,0 +1,90 @@
+---
+title: "Hybrid Poll Example"
+format: 
+  revealjs:
+    theme: default
+    css: styles/custom-dark.css
+---
+
+## Hybrid Poll Approach {.center}
+
+### Attempts iframe, falls back to button
+
+::: {.callout-note}
+## 📱 Interactive Poll
+
+<div id="poll-container">
+  <!-- Iframe attempt -->
+  <iframe id="poll-iframe" 
+          src="https://pollev-embeds.com/ajf" 
+          width="800px" 
+          height="600px"
+          style="border: none; border-radius: 12px; box-shadow: 0 8px 32px rgba(249, 210, 31, 0.2); display: block; margin: 0 auto;"
+          onload="checkIframeLoad()"
+          onerror="showFallback()">
+  </iframe>
+  
+  <!-- Fallback button (hidden initially) -->
+  <div id="fallback-button" style="display: none; text-align: center;">
+    <p>Iframe blocked - Click button to open poll:</p>
+    <a href="https://pollev-embeds.com/ajf" target="_blank" class="poll-button">
+      🗳️ **Join Poll** - "What's your biggest concern about data analytics?"
+    </a>
+  </div>
+</div>
+
+<script>
+function checkIframeLoad() {
+  // Check if iframe loaded successfully
+  setTimeout(function() {
+    const iframe = document.getElementById('poll-iframe');
+    const fallback = document.getElementById('fallback-button');
+    
+    try {
+      // Try to access iframe content (will fail if blocked)
+      const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+      if (!iframeDoc) {
+        showFallback();
+      }
+    } catch (e) {
+      // Iframe is blocked, show fallback
+      showFallback();
+    }
+  }, 2000);
+}
+
+function showFallback() {
+  document.getElementById('poll-iframe').style.display = 'none';
+  document.getElementById('fallback-button').style.display = 'block';
+}
+</script>
+:::
+
+---
+
+## Why This Happens {.center}
+
+### Technical Reasons for iframe Blocking
+
+| Reason | Description | Impact |
+|--------|-------------|---------|
+| **X-Frame-Options** | Server header prevents embedding | Blocks all iframe attempts |
+| **CSP Headers** | Content Security Policy restrictions | Modern security standard |
+| **Same-Origin Policy** | Browser security feature | Prevents cross-origin access |
+| **Terms of Service** | Some services prohibit embedding | Legal/contractual restriction |
+
+### **Best Practices:**
+
+1. **Always provide fallback** - Button or link as backup
+2. **Test thoroughly** - Check in different browsers/environments  
+3. **Use official embed codes** - When available from the service
+4. **Consider user experience** - New window might actually be better
+
+### **For Your Course:**
+
+The button approach you're using is actually **better** because:
+- ✅ Students get full Poll Everywhere experience
+- ✅ Works on all devices and browsers
+- ✅ No security restrictions
+- ✅ Better mobile experience
+- ✅ Students can easily switch between poll and presentation

@@ -1,0 +1,111 @@
+---
+title: "Iframe Embed Debugging"
+format: 
+  revealjs:
+    theme: default
+    css: styles/custom-dark.css
+---
+
+## Iframe Embed Testing {.center}
+
+### Let's see what actually works
+
+::: {.callout-note}
+## 🔍 Debugging Different Embed Approaches
+
+### Test 1: Standard Poll Everywhere URL
+<iframe src="https://pollev-embeds.com/ajf" 
+        width="400px" height="300px" 
+        style="border: 1px solid red; margin: 10px;">
+  <p>Iframe blocked - this text shows if iframe fails</p>
+</iframe>
+
+### Test 2: With /embed suffix
+<iframe src="https://pollev-embeds.com/ajf/embed" 
+        width="400px" height="300px" 
+        style="border: 1px solid blue; margin: 10px;">
+  <p>Iframe blocked - this text shows if iframe fails</p>
+</iframe>
+
+### Test 3: With embed parameters
+<iframe src="https://pollev-embeds.com/ajf?embed=true&controls=none" 
+        width="400px" height="300px" 
+        style="border: 1px solid green; margin: 10px;">
+  <p>Iframe blocked - this text shows if iframe fails</p>
+</iframe>
+
+### Test 4: Alternative domain
+<iframe src="https://embed.polleverywhere.com/ajf" 
+        width="400px" height="300px" 
+        style="border: 1px solid orange; margin: 10px;">
+  <p>Iframe blocked - this text shows if iframe fails</p>
+</iframe>
+:::
+
+---
+
+## What to Look For {.center}
+
+### Visual Indicators of iframe Status
+
+| **What You See** | **What It Means** |
+|------------------|-------------------|
+| **Red border with content** | ✅ iframe working |
+| **Red border with fallback text** | ❌ iframe blocked |
+| **Empty space** | ❌ iframe completely blocked |
+| **Different content than expected** | ⚠️ Partial iframe success |
+
+### **Common Error Messages:**
+- "This content cannot be displayed in a frame"
+- "X-Frame-Options: DENY"
+- "Content Security Policy violation"
+- "Refused to connect"
+
+---
+
+## Alternative Solutions {.center}
+
+### When "Official" Embeds Don't Work
+
+::: {.callout-tip}
+## 🎯 **Your Current Approach is Best**
+
+Since Poll Everywhere's embed isn't working reliably, your button approach is actually the **professional standard**:
+
+1. **Always works** - No security restrictions
+2. **Better UX** - Full Poll Everywhere experience
+3. **Mobile friendly** - Works on all devices
+4. **Professional** - Matches your presentation theme
+5. **Reliable** - No iframe compatibility issues
+
+### **Industry Best Practice:**
+Most professional presentations use buttons/links for external interactive content rather than iframes.
+:::
+
+---
+
+## Technical Deep Dive {.center}
+
+### Why This Happens
+
+```javascript
+// Browser security check (simplified)
+if (externalDomain && !sameOrigin) {
+  if (xFrameOptions === 'DENY') {
+    blockIframe();
+  }
+  if (cspFrameAncestors === 'none') {
+    blockIframe();
+  }
+}
+```
+
+### **Poll Everywhere's Likely Setup:**
+- **X-Frame-Options: DENY** - Prevents all embedding
+- **CSP: frame-ancestors 'none'** - Modern security standard
+- **Domain restrictions** - Only allows embedding on specific sites
+
+### **The Reality:**
+Even services that claim to support embedding often have restrictions that make it unreliable for classroom use.
+
+

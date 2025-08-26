@@ -1,0 +1,297 @@
+---
+title: "BUAD 442 - Course Introduction"
+subtitle: "Interpretable Data Models"
+format: 
+  revealjs:
+    theme: default
+    transition: slide
+    transition-speed: fast
+    controls: true
+    controls-layout: bottom-right
+    controls-tutorial: true
+    slide-number: true
+    show-slide-number: all
+    hash: true
+    keyboard: true
+    overview: true
+    center: true
+    touch: true
+    loop: false
+    rtl: false
+    navigation-mode: linear
+    shuffle: false
+    fragments: true
+    fragment-in-url: false
+    embedded: false
+    help: true
+    show-notes: false
+    auto-play-media: false
+    preload-iframes: false
+    auto-animate: true
+    auto-animate-matching: true
+    auto-animate-transition: false
+    auto-animate-easing: ease
+    auto-animate-duration: 1.0
+    auto-animate-unmatched: true
+    auto-animate-restart: false
+    backdrop-transition: fade
+    title-slide-attributes: {}
+    logo: ""
+    css: styles/custom-dark.css
+execute:
+  echo: true
+  eval: false
+  warning: false
+  error: false
+---
+
+## Welcome to BUAD 442 {.center}
+
+### Interpretable Data Models
+
+**Instructor:** [Your Name]  
+**Semester:** Fall 2025  
+**Office Hours:** [Schedule]
+
+::: {.notes}
+Welcome students to the course and introduce yourself briefly.
+:::
+
+---
+
+## Live Results {.center}
+
+### See Real-Time Responses
+
+::: {.callout-tip}
+## 📊 View Results
+
+Click below to see live poll results:
+
+<a href="https://embed.polleverywhere.com/free_text_polls/OMKIRvvG07cgcdmOGXkz1?controls=none&short_poll=true" target="_blank" class="results-button">
+  📈 **View Results** - Live Response Dashboard
+</a>
+
+*Results will open in a new window/tab*
+:::
+
+---
+
+## Course Overview {.center}
+
+::: {.columns}
+::: {.column width="60%"}
+### What You'll Learn
+
+- **Data Quality Assessment** - Understanding and improving data reliability
+- **Interpretable Models** - Making AI and ML decisions transparent
+- **Statistical Analysis** - Descriptive and inferential statistics
+- **Data Visualization** - Creating compelling business dashboards
+- **Decision Trees & DOT** - Visual decision modeling
+- **Communication** - Effectively presenting analytical insights
+:::
+
+::: {.column width="40%"}
+![Future Book Cover](graphics/bulletproofAnalyticsCover.jpeg){.r-stretch}
+
+*Future Book Cover*
+:::
+:::
+
+::: {.notes}
+Provide a high-level overview of the course content and learning objectives.
+:::
+
+---
+
+## Course Objectives {.center}
+
+### By the End of This Course, You Will:
+
+1. **Analyze** business data using appropriate statistical methods
+2. **Design** and create interpretable data models
+3. **Evaluate** data quality and implement improvement strategies
+4. **Communicate** insights effectively to business stakeholders
+5. **Apply** interpretable ML to solve business problems
+6. **Avoid** common analytical pitfalls and biases
+
+::: {.notes}
+Emphasize the practical, hands-on nature of the course and real-world applications.
+:::
+
+---
+
+## Course Structure {.center}
+
+### Weekly Format
+
+- **Lectures** (2 hours/week) - Theory and concepts
+- **1-Hour Challenges** - Hands-on practice with real data
+- **Individual Portfolios** - Document your learning journey
+- **Tool Mastery** - GitHub, Cursor AI, Quarto, R, Python, DOT
+- **Final Project** - Comprehensive portfolio showcase
+
+::: {.notes}
+Explain the course structure and how different components work together.
+:::
+
+---
+
+## Technology Stack {.center}
+
+### Tools We'll Master
+
+| Category | Tools | Purpose |
+|----------|-------|---------|
+| **Version Control** | GitHub | Collaboration & portfolio |
+| **AI Assistance** | Cursor AI | Enhanced coding |
+| **Documentation** | Quarto | Professional reports |
+| **Analysis** | R, Python | Data science |
+| **Visualization** | DOT | Decision modeling |
+
+::: {.notes}
+Introduce the technology stack and assure students that no prior experience is required.
+:::
+
+---
+
+## Prerequisites {.center}
+
+### What You Need to Know
+
+- **Basic Statistics** - Mean, median, standard deviation
+- **Business Acumen** - Understanding of business processes
+- **No Programming Required** - We'll learn together!
+- **Growth Mindset** - Willingness to learn new tools
+
+::: {.notes}
+Set expectations about prerequisites and reassure students about the learning curve.
+:::
+
+---
+
+## Assessment Breakdown {.center}
+
+### Grading Structure
+
+| Component | Weight | Description |
+|-----------|--------|-------------|
+| **1-Hour Challenges** | 60% | Weekly hands-on projects |
+| **Portfolio Development** | 25% | Personal learning showcase |
+| **Final Project** | 15% | Comprehensive application |
+
+::: {.notes}
+Explain the grading structure and emphasize the importance of each component.
+:::
+
+---
+
+## Challenge Format {.center}
+
+### Weekly 1-Hour Challenges
+
+- **Real-world Problems** - Authentic business scenarios
+- **Multiple Tools** - R, Python, Quarto, DOT
+- **Individual Work** - Personal skill development
+- **Portfolio Building** - Document your progress
+- **Immediate Feedback** - Learn from each challenge
+
+::: {.notes}
+Explain the challenge format and how it promotes active learning.
+:::
+
+---
+
+## Student Portfolios {.center}
+
+### Showcase Your Work
+
+- **Personal Portfolio** - Document your learning journey
+- **Challenge Submissions** - Individual project folders
+- **Skills Development** - Track your progress
+- **Career Preparation** - Build your professional brand
+- **GitHub Presence** - Real-world portfolio
+
+::: {.notes}
+Explain the portfolio concept and how it helps with career development.
+:::
+
+---
+
+## Course Policies {.center}
+
+### Important Guidelines
+
+- **Challenge Deadlines** - 1-hour time limit, submit on time
+- **Academic Integrity** - Zero tolerance for plagiarism
+- **Collaboration** - Encouraged, but individual work required
+- **Communication** - 24-hour response time for emails
+- **Growth Mindset** - Mistakes are learning opportunities
+
+::: {.notes}
+Cover essential course policies and set clear expectations.
+:::
+
+---
+
+## Getting Started {.center}
+
+### Next Steps
+
+1. **Review Course Structure** - Understand the challenge format
+2. **Set Up GitHub** - Create your portfolio repository
+3. **Install Tools** - R, Python, Quarto, Cursor AI
+4. **Join Course Repository** - Access to all materials
+5. **First Challenge** - Due next week
+
+::: {.notes}
+Provide clear next steps and immediate action items for students.
+:::
+
+---
+
+## Resources & Support {.center}
+
+### Where to Get Help
+
+- **Office Hours** - Drop-in or by appointment
+- **GitHub Discussions** - Peer support and questions
+- **Tool Setup Guides** - Step-by-step instructions
+- **Challenge Templates** - Starter code and examples
+- **University Services** - Writing center, tutoring
+
+::: {.notes}
+Ensure students know where to get help and support throughout the semester.
+:::
+
+---
+
+## Questions & Discussion {.center}
+
+### Let's Talk!
+
+- **Course Content** - What interests you most?
+- **Career Goals** - How does this fit your plans?
+- **Concerns** - What worries you about the course?
+- **Suggestions** - How can we make this better?
+
+::: {.notes}
+Encourage student engagement and address any immediate concerns or questions.
+:::
+
+---
+
+## Thank You! {.center}
+
+### Looking Forward to a Great Semester
+
+**Contact Information:**
+- Email: [your.email@university.edu]
+- Office: [Building/Room]
+- Office Hours: [Schedule]
+
+**Next Class:** [Date] - First Challenge Introduction
+
+::: {.notes}
+End on a positive note and provide clear contact information for follow-up questions.
+:::

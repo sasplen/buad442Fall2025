@@ -1,0 +1,324 @@
+/* Custom Dark Theme for BUAD 442 - Interpretable Data Models */
+
+/* Import Greycliff font */
+@import url('https://fonts.googleapis.com/css2?family=Greycliff+CF:wght@300;400;500;600;700;800&display=swap');
+
+/* Root variables for consistent theming */
+:root {
+  --primary-color: #f9d21f;
+  --secondary-color: #2c3e50;
+  --background-dark: #1a1a1a;
+  --background-darker: #0f0f0f;
+  --text-light: #ffffff;
+  --text-muted: #b0b0b0;
+  --accent-color: #3498db;
+  --success-color: #27ae60;
+  --warning-color: #f39c12;
+  --error-color: #e74c3c;
+  --border-color: #333333;
+  --shadow-color: rgba(249, 210, 31, 0.1);
+}
+
+/* Global styles */
+.reveal {
+  font-family: 'Greycliff CF', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text-light);
+  background: linear-gradient(135deg, var(--background-dark) 0%, var(--background-darker) 100%);
+}
+
+/* Slide backgrounds */
+.reveal .slides section {
+  background: transparent;
+  color: var(--text-light);
+}
+
+/* Headings */
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+  font-family: 'Greycliff CF', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 0.5em;
+}
+
+.reveal h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.reveal h2 {
+  font-size: 2em;
+  font-weight: 600;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.3em;
+}
+
+.reveal h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+/* Text content */
+.reveal p, .reveal li {
+  color: var(--text-light);
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Lists */
+.reveal ul, .reveal ol {
+  color: var(--text-light);
+}
+
+.reveal li {
+  margin-bottom: 0.5em;
+  color: var(--text-light);
+}
+
+.reveal li strong {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Tables */
+.reveal table {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border-collapse: collapse;
+  margin: 1em auto;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.reveal table th {
+  background: var(--primary-color);
+  color: var(--background-dark);
+  font-weight: 600;
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.reveal table td {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-light);
+}
+
+.reveal table tr:hover {
+  background: rgba(249, 210, 31, 0.1);
+}
+
+/* Code blocks */
+.reveal pre {
+  background: var(--background-darker);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.reveal code {
+  color: var(--primary-color);
+  background: rgba(249, 210, 31, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Fira Code', 'Monaco', 'Consolas', monospace;
+}
+
+/* Iframe styling */
+.reveal iframe {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px var(--shadow-color);
+  background: white;
+}
+
+/* Poll button styling */
+.reveal .poll-button, .reveal .results-button {
+  display: inline-block;
+  padding: 16px 32px;
+  margin: 20px 10px;
+  background: linear-gradient(135deg, var(--primary-color) 0%, #f39c12 100%);
+  color: var(--background-dark);
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1em;
+  box-shadow: 0 8px 32px rgba(249, 210, 31, 0.3);
+  transition: all 0.3s ease;
+  border: 2px solid var(--primary-color);
+}
+
+.reveal .poll-button:hover, .reveal .results-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(249, 210, 31, 0.4);
+  background: linear-gradient(135deg, #f39c12 0%, var(--primary-color) 100%);
+  color: var(--background-dark);
+  text-decoration: none;
+}
+
+.reveal .results-button {
+  background: linear-gradient(135deg, var(--accent-color) 0%, #2980b9 100%);
+  border-color: var(--accent-color);
+  box-shadow: 0 8px 32px rgba(52, 152, 219, 0.3);
+}
+
+.reveal .results-button:hover {
+  box-shadow: 0 12px 40px rgba(52, 152, 219, 0.4);
+  background: linear-gradient(135deg, #2980b9 0%, var(--accent-color) 100%);
+}
+
+/* Callout styling */
+.reveal .callout-note, .reveal .callout-tip {
+  background: rgba(249, 210, 31, 0.1);
+  border-left: 4px solid var(--primary-color);
+  padding: 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0 12px 12px 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.reveal .callout-tip {
+  background: rgba(52, 152, 219, 0.1);
+  border-left-color: var(--accent-color);
+}
+
+.reveal .callout-note h4, .reveal .callout-tip h4 {
+  color: var(--primary-color);
+  margin-top: 0;
+  font-size: 1.3em;
+}
+
+.reveal .callout-tip h4 {
+  color: var(--accent-color);
+}
+
+/* Blockquotes */
+.reveal blockquote {
+  background: rgba(249, 210, 31, 0.1);
+  border-left: 4px solid var(--primary-color);
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+}
+
+/* Links */
+.reveal a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.reveal a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* Notes */
+.reveal .notes {
+  color: var(--text-muted);
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+/* Center alignment */
+.reveal .center {
+  text-align: center;
+}
+
+/* Custom slide backgrounds */
+.reveal .slides section[data-background] {
+  background-size: cover;
+  background-position: center;
+}
+
+/* Progress bar */
+.reveal .progress {
+  color: var(--primary-color);
+  height: 4px;
+}
+
+/* Controls */
+.reveal .controls {
+  color: var(--primary-color);
+}
+
+.reveal .controls button {
+  color: var(--primary-color);
+  background: rgba(249, 210, 31, 0.1);
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+}
+
+.reveal .controls button:hover {
+  background: var(--primary-color);
+  color: var(--background-dark);
+}
+
+/* Slide numbers */
+.reveal .slide-number {
+  color: var(--primary-color);
+  font-family: 'Greycliff CF', sans-serif;
+  font-weight: 500;
+}
+
+/* Fragment animations */
+.reveal .fragment {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.reveal .fragment.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom animations for primary color elements */
+.reveal .fragment.highlight-current-blue.visible {
+  color: var(--primary-color);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .reveal h1 {
+    font-size: 2em;
+  }
+  
+  .reveal h2 {
+    font-size: 1.6em;
+  }
+  
+  .reveal h3 {
+    font-size: 1.3em;
+  }
+  
+  .reveal p, .reveal li {
+    font-size: 1em;
+  }
+  
+  .reveal iframe {
+    width: 100% !important;
+    height: 400px !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  .reveal {
+    background: white;
+    color: black;
+  }
+  
+  .reveal h1, .reveal h2, .reveal h3 {
+    color: var(--secondary-color);
+  }
+  
+  .reveal p, .reveal li {
+    color: black;
+  }
+}
