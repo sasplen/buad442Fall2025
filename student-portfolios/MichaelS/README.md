@@ -15,10 +15,10 @@
 ## 🖼️ Portfolio Images
 
 ### Me with Some Zebras:
-![Zebras](unamed.jpg)
+![Zebras](unnamed.jpg)
 
 ### On Top of a Mountain in Chile
-![On Top of a Mountain in Chile](unnamed%20(1).jpg)
+![On Top of a Mountain in Chile](unnamed (1).jpg)
 
 
 
