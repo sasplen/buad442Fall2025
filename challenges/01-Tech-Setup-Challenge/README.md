@@ -21,7 +21,7 @@ This challenge (see techSetupChallenge.qmd) focuses on setting up essential deve
 - **Quarto**: Professional document creation and reporting
 
 ## Getting Started
-1. Follow the detailed instructions in `techSetupChallenge.qmd`
+1. Follow the detailed instructions in `techSetupChallenge.pdf`(or `techSetupChallenge.html` if opening from your synced repository)
 2. Complete each section in order
 3. Save and commit your work frequently (`Ctrl+S` and `Ctrl+Shift+G`)
 4. Use Cursor AI's AI assistance (`Ctrl+L`) for content generation
