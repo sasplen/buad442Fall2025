@@ -1,0 +1,23 @@
+# 👨‍🎓 Student Portfolio - Will 🚴
+
+---
+
+## 📋 Student Information
+
+| **Field** | **Details** |
+|-----------|-------------|
+| **Nickname/Pseudonym** | Will |
+| **Interesting Fact** | I ran 50 miles over the summer |
+| **Interesting Fact2** | I recently picked up pickleball |
+
+---
+
+## 🖼️ Portfolio Images
+
+### Me in Korea at Namsan Tower
+![Me at Namsan Tower](IMG_7448.jpg)
+
+### Snowboarding with Friends
+![Me and Friends on the Mountain](IMG_7920.jpg)
+
+
