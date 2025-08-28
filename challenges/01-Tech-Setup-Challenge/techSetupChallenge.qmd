@@ -39,13 +39,15 @@ This challenge will get you set up with many of the essential tools for BUAD 442
 
 **💾 Saving Files in Cursor AI:**
 
-- **Auto-save:** Cursor AI automatically saves files as you type (you'll see a small dot on the file tab when there are unsaved changes)
-- **Manual save:** Press `Ctrl+S` to save the current file
-- **Save all:** Press `Ctrl+Shift+S` to save all open files
+- **Auto-save:** Cursor AI automatically saves files to memory as you type (you'll see a small dot on the file tab when there are unsaved changes)
+  - **Note:** Auto-save is convenient but doesn't guarantee your work is written to disk
+- **Manual save:** Press `Ctrl+S` to save the current file to disk
+  - **Important:** This ensures your work is permanently stored and visible to Git
+- **Save all:** Press `Ctrl+Shift+S` to save all open files to disk
 - **File indicators:** 
   - White dot on tab = unsaved changes
   - No dot = file is saved
-  - Always save before closing files or switching tasks!
+  - Always manually save before closing files, switching tasks, or committing to Git!
 
 **AI Interaction in Cursor:**
 
@@ -79,7 +81,7 @@ This challenge will get you set up with many of the essential tools for BUAD 442
 
 **Option A - Fork & Clone (Recommended):**
 
-- Go to [course repo: https://github.com/flyaflya/buad442Fall2025](https://github.com/flyaflya/buad442Fall2025) on GitHub ( ake sure you are logged in to GitHub, otherwise you won't see the Fork button)
+- Go to [course repo: https://github.com/flyaflya/buad442Fall2025](https://github.com/flyaflya/buad442Fall2025) on GitHub ( make sure you are logged in to GitHub, otherwise you won't see the Fork button)
 - Click the **"Fork"** button (top right) to create your own copy
   - **Why?** Forking creates your own copy on GitHub where you can make changes without messing up Adam's GitHub repository
   - **Why?** You can't directly edit the original course repository
@@ -114,20 +116,33 @@ This challenge will get you set up with many of the essential tools for BUAD 442
   - Click "Commit" (✓ icon)
   - **Why commit now?** This creates a backup of your work in case something goes wrong!
 
+### 4.5. 🔄 Sync to GitHub & Verify Content
+
+**Before submitting your pull request, let's make sure everything is properly uploaded and visible on GitHub:**
+
+- **💾 Save all files first:** Press `Ctrl+Shift+S` to save all your work
+- **Push to GitHub:** In Cursor AI, click "Sync Changes" or "Push" to upload your changes
+  - **Why?** This uploads your local changes to your GitHub fork
+- **Verify on GitHub:** Go to your forked repository: `https://github.com/YOUR_USERNAME/buad442Fall2025`
+- **Check your student folder:** Navigate to `student-portfolios/[YourNickNameLastInitial]/` on GitHub
+- **Verify your content:**
+  - [ ] Your `README.md` file is visible and contains your personal information
+  - [ ] Your photos are properly displayed in the README.md file
+  - [ ] All image files are uploaded to your student folder
+  - [ ] No broken image links or missing content
+- **If anything is missing or incorrect:**
+  - Go back to Cursor AI and make the necessary changes
+  - Save, commit, and push again
+  - Refresh your GitHub page to verify the updates
+- **Only proceed to the next step when everything looks correct on GitHub!**
+
 ### 5. 🔄 Submit via Pull Request
 
 **What is a Pull Request?**
 A pull request is like asking "Hey, can you add my changes to your project?" It's how you submit your work for review and inclusion in the main course repository. Think of it as a digital way to turn in your homework!
 
-**In Cursor AI:**
+**Since you already synced your changes to GitHub in step 4.5, you can now create your pull request directly:**
 
-- **💾 Save all files first:** Press `Ctrl+Shift+S` to save all your work
-- Stage your changes: `Ctrl+Shift+G` → click "+" next to your new folder
-  - **Why?** This tells Git which files you want to include in your submission
-- Commit: Write message like "Add student submission for [YourName]"
-  - **Why?** This creates a permanent record of your changes with a description
-- Push: Click "Sync Changes" or "Publish Branch"
-  - **Why?** This uploads your changes to your GitHub fork
 - Go to your forked repo on GitHub to create the pull request
 
 **Create Pull Request:**
@@ -162,7 +177,7 @@ It's not just for code - it's for creating beautiful, reproducible documents tha
 - Verify installation: Open terminal/command prompt and type `quarto --version`
 
 - **💡 Recommended:** Install the Quarto extension in Cursor AI for better editing experience:
-  - Press `Ctrl+Shift+X` to open Extensions
+  - Press `Ctrl+Shift+X` to open Extensions (from with Cursor AI)
   - Search for "Quarto"
   - Install the "Quarto" extension by Quarto
   - **Why?** This gives you syntax highlighting, live preview, and better editing support for `.qmd` files
@@ -187,6 +202,10 @@ Create a simple test document:
 
 4. **🤖 Experience Cursor AI Magic:** Let's add some content about your interests using Cursor's AI assistant:
    - **Open the AI Chat:** Press `Ctrl+L` to open Cursor's AI chat panel (or click the chat icon in the sidebar)
+   - **Ensure correct context:** Make sure your `test.qmd` file is open and active in the editor (click on it if needed)
+     - **Why?** This ensures Cursor AI has the correct file context for the conversation
+   - **Check the mode:** In the chat panel, make sure the dropdown shows "Ask" (not "Agent")
+     - **Why?** "Ask" mode is perfect for quick content additions to your current file
    - **Ask Cursor to add content:** Type something like: "Add a paragraph about my interest in [your hobby/sport/music/etc] to this document"
    - **Example prompts you can try:**
      - "Add a paragraph about my love for basketball and how I play point guard"
