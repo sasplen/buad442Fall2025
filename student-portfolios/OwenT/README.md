@@ -15,9 +15,9 @@
 ## 🖼️ Portfolio Images
 
 ### My beta fish
-![My pet](/Users/owentatlonghari/Library/CloudStorage/OneDrive-UniversityofDelaware-o365/MISY442/buad442Fall2025/IMG_0822.HEIC)
+![My pet](/Users/owentatlonghari/Library/CloudStorage/OneDrive-UniversityofDelaware-o365/MISY442/buad442Fall2025/IMG_0822.jpg)
 
 ### Cheeseburger
-![Me purchasing my large ceramic cheeseburger](/Users/owentatlonghari/Library/CloudStorage/OneDrive-UniversityofDelaware-o365/MISY442/buad442Fall2025/IMG_2398.HEIC)
+![Me purchasing my large ceramic cheeseburger](/Users/owentatlonghari/Library/CloudStorage/OneDrive-UniversityofDelaware-o365/MISY442/buad442Fall2025/IMG_2398.jpg)
 
 
