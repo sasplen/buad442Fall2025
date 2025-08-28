@@ -1,4 +1,4 @@
-# 👨‍🎓 Student Portfolio - Adam 🚴
+# 👨‍🎓 Student Portfolio - Adam F. 🚴
 
 ---
 
