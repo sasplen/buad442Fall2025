@@ -1,0 +1,10 @@
+---
+title: "My first quarto document"
+format: html
+---
+
+# Hello World
+
+This is my first quarto document. My name is Aidan
+
+I'm a big baseball fan and love following the sport throughout the season. Whether it's watching games, keeping up with stats, or discussing the latest trades and playoff races, baseball is definitely one of my biggest passions.
