@@ -1,0 +1,226 @@
+---
+title: "Tech Setup Challenge"
+subtitle: "Getting Started with Your Analytics Toolkit"
+format: 
+  html: default
+  pdf: default
+execute:
+  echo: true
+  eval: false
+---
+
+# 🚀 Tech Setup Challenge - Quick Start Guide
+
+## Challenge Overview
+This challenge will get you set up with many of the essential tools for BUAD 442. You'll learn to use modern development tools that are standard in the analytics industry.
+
+## Part 1: Core Tools Setup ⚙️
+
+### 1. 📝 Cursor AI Setup
+- Go to [cursor.com/students](https://cursor.com/students)
+- Sign up with your **udel.edu email** (free for students for 1-year! 🎓, but may need credit card)
+  - **Backup plan:** If student account approval is delayed or has issues, you can sign up for a free 2-week trial at [cursor.com](https://cursor.com) while waiting for your student account to be approved
+- Download and install Cursor AI (default choices for installation are fine)
+- Launch Cursor AI
+- Install the **GitHub Pull Requests** extension in Cursor
+
+### 1.5. 🎛️ Cursor AI Interface & Git Setup
+**Getting Familiar with Cursor AI:**
+- **Activity Bar** (left side): Contains icons for different features
+  - Explorer (files)
+  - Search
+  - Source Control (Git)
+  - Agents
+  - 📦 Extensions
+- **Sidebar** (right of activity bar): Shows content for the selected activity
+
+**AI Interaction in Cursor:**
+- **Quick Chat (Ask Mode):** Press `Ctrl+L` to open a quick chat with AI
+  - Perfect for asking questions about your code
+  - Gets context from your current file
+  - Great for debugging, explaining code, or getting suggestions
+- **Agent Mode:** Click the **Agents icon** in the activity bar
+  - More powerful AI assistant that can work across your entire project
+  - Can analyze multiple files, suggest refactoring, and help with complex tasks
+  - **Difference:** Ask mode is for quick questions, Agent mode is for deeper project-wide assistance
+
+**Set up Git for Local Source Control:**
+- Click the **Source Control icon** (three-branch icon) in the activity bar
+- Follow prompts to Download Git (use default settings when prompted)
+  - **Why?** Git tracks all changes to your files, so you can see what you've modified
+- **Return to Cursor** after Git installation completes
+- This sets up Git tracking (version control) for your local project folder
+  - **Why?** Version control lets you save your work progress and collaborate with others
+- Later in this tutorial, you will see a "Changes" section in the sidebar showing modified files
+  - **Why?** This helps you see exactly what files you've changed before submitting
+- **Alternative:** You can also click "Clone Repository" in the Source Control panel to get your GitHub repository
+
+### 2. 🔗 GitHub Account
+- Create account at [github.com](https://github.com) (if you don't have one)
+- Use your **udel.edu email** for consistency
+
+### 3. 📥 Get Course Materials
+**Option A - Fork & Clone (Recommended):**
+- Go to [course repo](https://github.com/flyaflya/buad442Fall2025) on GitHub
+- Click the **"Fork"** button (top right) to create your own copy
+  - **Why?** Forking creates your own copy on GitHub where you can make changes without messing up Adam's GitHub repository
+  - **Why?** You can't directly edit the original course repository
+- Now, get a copy of your GitHub repository locally so you can edit with Cursor AI. In Cursor AI, press `Ctrl+Shift+P` → "Git: Clone"
+- Paste your forked repo URL: `https://github.com/YOUR_USERNAME/buad442Fall2025`
+  - **Why?** This downloads your personal copy to your computer
+- Choose where to save locally (I recommend somewhere easy to find like C:\).  A folder named `buad442Fall2025` will be placed in this location for you upon cloning.
+
+### 4. 👤 Create Your Student Folder
+**Using the Activity Bar & Sidebar:**
+- Click the **Explorer icon** (looks like stacked files) in the activity bar to open the file explorer
+- In the sidebar, you'll see your project files
+- Navigate to `challenges/01-Tech-Setup-Challenge/student-submissions/`
+  - **Tip:** Click the small arrows (>) next to folder names to expand them
+- **Right-click** in the `student-submissions` folder → "New Folder"
+- Name your folder: `YourNickNameLastInitial` (e.g., `JohnD`, `SivaX`, etc.)
+  - **FERPA Privacy Option:** If you prefer not to use your real name, you can use a pseudonym like `Student001`, `Analyst2025`, or `DataLearner` instead.  Just email Adam (ajf@udel.edu) and he'll note the connection.
+- **Right-click** on `AdamF/submission.md` → "Copy"
+- **Right-click** in your new student/nickname folder → "Paste"
+- **Double-click** the copied `submission.md` to open and edit it
+- Edit `submission.md` with your info:
+  ```markdown
+  # Challenge 01 Submission - [Your Name or Pseudonym]
+  
+  **Student Name:** [Your Name or Pseudonym]  
+  **Date:** [Today's Date]  
+  **Challenge:** Tech Setup Challenge  
+  **Time Spent:** [Actual time spent on setup]
+  
+  ## Setup Summary
+  
+  ### Tools Installed
+  - Cursor AI (with student account)
+  - Git (version control)
+  - GitHub account created
+  - Quarto (documentation tool)
+  
+  ### Challenges Encountered
+  - [List any issues you faced during setup]
+  - [How you resolved them]
+  
+  ### What You Learned
+  - [Key insights from the setup process]
+  - [New skills acquired]
+  
+  ## Files Submitted
+  - `submission.md` - This file
+  - `my-first-report.qmd` - Your first Quarto report (if completed)
+  
+  ## Next Steps
+  - [What you plan to do next with these tools]
+  - [How you'll use them in the course]
+  ```
+
+### 5. 🔄 Submit via Pull Request
+
+**What is a Pull Request?**
+A pull request is like asking "Hey, can you add my changes to your project?" It's how you submit your work for review and inclusion in the main course repository. Think of it as a digital way to turn in your homework!
+
+**In Cursor AI:**
+- Stage your changes: `Ctrl+Shift+G` → click "+" next to your new folder
+  - **Why?** This tells Git which files you want to include in your submission
+- Commit: Write message like "Add student submission for [YourName]"
+  - **Why?** This creates a permanent record of your changes with a description
+- Push: Click "Sync Changes" or "Publish Branch"
+  - **Why?** This uploads your changes to your GitHub fork
+- Go to your forked repo on GitHub to create the pull request
+
+**Create Pull Request:**
+- Go to your forked repo: `https://github.com/YOUR_USERNAME/buad442Fall2025`
+- You should see a banner saying "This branch is X commits ahead of flyaflya:main"
+  - **Why?** This shows your fork has changes that aren't in the original course repo
+- Click **"Compare & pull request"**
+  - **Why?** This requests to merge your changes into the original course repository
+- Add description: "Student submission for [YourName]"
+  - **Why?** This helps identify your submission and explains what you did
+- Click **"Create pull request"**
+  - **Why?** This submits your work for review and inclusion in the course materials
+
+## Part 2: Quarto Setup 📊
+
+### Why Quarto?
+Quarto is essential for creating **professional reports** that combine:
+- **Text** (like this document)
+- **Code** (Python/R analysis)
+- **Visualizations** (charts, graphs)
+- **Interactive elements** (dashboards)
+
+It's not just for code - it's for creating beautiful, reproducible documents that are perfect for business presentations and reports.
+
+### 6. 📚 Install Quarto
+- Go to [quarto.org/docs/get-started/](https://quarto.org/docs/get-started/)
+- Download and install Quarto for your operating system
+- Verify installation: Open terminal/command prompt and type `quarto --version`
+
+### 7.  Test Quarto
+Create a simple test document:
+1. Create a new file called `test.qmd`
+2. Add this content:
+   ```markdown
+   ---
+   title: "My First Quarto Document"
+   format: html
+   ---
+   
+   # Hello World!
+   
+   This is my first Quarto document.
+   ```
+3. Render it: `quarto render test.qmd`  ← Note: specific file name
+4. Open the generated `test.html` file
+
+### 8. 🎯 Create Your First Report
+- Navigate to your student folder
+- Create a new file: `my-first-report.qmd`
+- Write a brief report about your tech setup experience
+- Include sections for:
+  - Tools installed
+  - Challenges encountered
+  - What you learned
+- Render to HTML and PDF formats
+
+##  Quick Git Basics
+- **Commit** = Save your changes
+- **Push** = Upload to GitHub
+- **Pull Request** = Request to add your changes to main repo
+- **Fork** = Your copy of the repo
+
+## 📋 Submission Checklist
+- [ ] Cursor AI installed and configured
+- [ ] GitHub account created
+- [ ] Course materials downloaded
+- [ ] Student folder created with submission.md
+- [ ] Pull request submitted
+- [ ] Quarto installed and tested
+- [ ] First Quarto report created
+
+## 🆘 Need Help?
+- GitHub tutorials: [guides.github.com](https://guides.github.com)
+- Quarto docs: [quarto.org/docs](https://quarto.org/docs)
+- Cursor AI has built-in help and AI assistance
+- Ask questions in class or office hours!
+
+**Total time to complete:** ~45 minutes ⏱️
+
+---
+
+## Why These Tools Matter 🎯
+
+### In the Real World:
+- **GitHub** = Industry standard for collaboration
+- **Cursor AI** = Modern AI-assisted development
+- **Quarto** = Professional reporting and documentation
+- **Git** = Version control (essential for any coding project)
+
+### For This Course:
+- **Challenges** will require Quarto reports
+- **Portfolio** will be built on GitHub
+- **Presentations** will use Quarto slides
+- **Collaboration** will happen through GitHub
+
+You're learning tools that are used by data scientists, analysts, and developers worldwide! 🌍

@@ -35,5 +35,6 @@ This course teaches students to build bulletproof decision analytics by systemat
 - **Probability Distributions**: Modeling uncertainty and risk in business contexts
 - **Ergodicity Economics**: Understanding time-based vs. ensemble-based thinking
 - **Data Visualization for Storytelling**: Communicating insights through compelling visuals
+- **Models**: Understanding interpretability from transparent to black-box models
 
 
