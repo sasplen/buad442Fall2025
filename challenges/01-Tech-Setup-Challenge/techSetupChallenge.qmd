@@ -79,42 +79,10 @@ This challenge will get you set up with many of the essential tools for BUAD 442
 - **Right-click** in the `student-submissions` folder → "New Folder"
 - Name your folder: `YourNickNameLastInitial` (e.g., `JohnD`, `SivaX`, etc.)
   - **FERPA Privacy Option:** If you prefer not to use your real name, you can use a pseudonym like `Student001`, `Analyst2025`, or `DataLearner` instead.  Just email Adam (ajf@udel.edu) and he'll note the connection.
-- **Right-click** on `AdamF/submission.md` → "Copy"
-- **Right-click** in your new student/nickname folder → "Paste"
-- **Double-click** the copied `submission.md` to open and edit it
-- Edit `submission.md` with your info:
-  ```markdown
-  # Challenge 01 Submission - [Your Name or Pseudonym]
-  
-  **Student Name:** [Your Name or Pseudonym]  
-  **Date:** [Today's Date]  
-  **Challenge:** Tech Setup Challenge  
-  **Time Spent:** [Actual time spent on setup]
-  
-  ## Setup Summary
-  
-  ### Tools Installed
-  - Cursor AI (with student account)
-  - Git (version control)
-  - GitHub account created
-  - Quarto (documentation tool)
-  
-  ### Challenges Encountered
-  - [List any issues you faced during setup]
-  - [How you resolved them]
-  
-  ### What You Learned
-  - [Key insights from the setup process]
-  - [New skills acquired]
-  
-  ## Files Submitted
-  - `submission.md` - This file
-  - `my-first-report.qmd` - Your first Quarto report (if completed)
-  
-  ## Next Steps
-  - [What you plan to do next with these tools]
-  - [How you'll use them in the course]
-  ```
+- **Right-click** on `AdamF/submission.md` → "Copy" (this will be your template to modify for your submission)
+- **Right-click** in your new nickname folder → "Paste"
+- **Double-click** the copied `submission.md` (i.e. the one in your student folder) to open and edit it
+- Edit `submission.md` with your info and two cool pictures of you and/or your interests (these are public images)
 
 ### 5. 🔄 Submit via Pull Request
 
@@ -160,35 +128,22 @@ It's not just for code - it's for creating beautiful, reproducible documents tha
 ### 7.  Test Quarto
 Create a simple test document:
 1. Create a new file called `test.qmd`
-2. Add this content:
+2. Add this content (replace bracketed text with your nickname):
    ```markdown
    ---
    title: "My First Quarto Document"
    format: html
    ---
    
-   # Hello World!
+   # Hello World! 👋
    
-   This is my first Quarto document.
+   This is my first Quarto document. My nick name is [YourNickNameLastInitial].
    ```
 3. Render it: `quarto render test.qmd`  ← Note: specific file name
 4. Open the generated `test.html` file
 
-### 8. 🎯 Create Your First Report
-- Navigate to your student folder
-- Create a new file: `my-first-report.qmd`
-- Write a brief report about your tech setup experience
-- Include sections for:
-  - Tools installed
-  - Challenges encountered
-  - What you learned
-- Render to HTML and PDF formats
-
-##  Quick Git Basics
-- **Commit** = Save your changes
-- **Push** = Upload to GitHub
-- **Pull Request** = Request to add your changes to main repo
-- **Fork** = Your copy of the repo
+## Congratulations! You're Done! ✅
+You've completed the tech setup challenge! Check the checklist below to make sure you've completed all the steps.
 
 ## 📋 Submission Checklist
 - [ ] Cursor AI installed and configured
@@ -198,6 +153,12 @@ Create a simple test document:
 - [ ] Pull request submitted
 - [ ] Quarto installed and tested
 - [ ] First Quarto report created
+
+##  Quick Git Basics
+- **Commit** = Save your changes so you can go back to these files at this instant in time - do often as AI will gladly mess up your files and give you an unrecoverable mess on your hands
+- **Push** = Upload to GitHub
+- **Pull Request** = Request to add your changes to original repo
+- **Fork** = Your copy of the originalrepo
 
 ## 🆘 Need Help?
 - GitHub tutorials: [guides.github.com](https://guides.github.com)
