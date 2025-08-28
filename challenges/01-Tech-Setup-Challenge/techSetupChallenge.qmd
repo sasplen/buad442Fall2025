@@ -24,11 +24,11 @@ This challenge will get you set up with many of the essential tools for BUAD 442
   - **Backup plan:** If student account approval is delayed or has issues, you can sign up for a free 2-week trial at [cursor.com](https://cursor.com) while waiting for your student account to be approved
 - Download and install Cursor AI (default choices for installation are fine)
 - Launch Cursor AI
-- Install the **GitHub Pull Requests** extension in Cursor
 
 ### 1.5. 🎛️ Cursor AI Interface & Git Setup
 
 **Getting Familiar with Cursor AI:**
+
 - **Activity Bar** (left side): Contains icons for different features
   - Explorer (files)
   - Search
@@ -38,6 +38,7 @@ This challenge will get you set up with many of the essential tools for BUAD 442
 - **Sidebar** (right of activity bar): Shows content for the selected activity
 
 **💾 Saving Files in Cursor AI:**
+
 - **Auto-save:** Cursor AI automatically saves files as you type (you'll see a small dot on the file tab when there are unsaved changes)
 - **Manual save:** Press `Ctrl+S` to save the current file
 - **Save all:** Press `Ctrl+Shift+S` to save all open files
@@ -47,6 +48,7 @@ This challenge will get you set up with many of the essential tools for BUAD 442
   - Always save before closing files or switching tasks!
 
 **AI Interaction in Cursor:**
+
 - **Quick Chat (Ask Mode):** Press `Ctrl+L` to open a quick chat with AI
   - Perfect for asking questions about your code
   - Gets context from your current file
@@ -71,13 +73,13 @@ This challenge will get you set up with many of the essential tools for BUAD 442
 ### 2. 🔗 GitHub Account
 
 - Create account at [github.com](https://github.com) (if you don't have one)
-- Use your **udel.edu email** for consistency
+- Not necessarily needed, but use your **udel.edu email** for consistency/simplicity
 
 ### 3. 📥 Get Course Materials
 
 **Option A - Fork & Clone (Recommended):**
 
-- Go to [course repo](https://github.com/flyaflya/buad442Fall2025) on GitHub
+- Go to [course repo: https://github.com/flyaflya/buad442Fall2025](https://github.com/flyaflya/buad442Fall2025) on GitHub ( ake sure you are logged in to GitHub, otherwise you won't see the Fork button)
 - Click the **"Fork"** button (top right) to create your own copy
   - **Why?** Forking creates your own copy on GitHub where you can make changes without messing up Adam's GitHub repository
   - **Why?** You can't directly edit the original course repository
@@ -98,9 +100,12 @@ This challenge will get you set up with many of the essential tools for BUAD 442
 - Name your folder: `YourNickNameLastInitial` (e.g., `JohnD`, `SivaX`, etc.)
   - **FERPA Privacy Option:** If you prefer not to use your real name, you can use a pseudonym like `Student001`, `Analyst2025`, or `DataLearner` instead.  Just email Adam (ajf@udel.edu) and he'll note the connection.
 - **Right-click** on `AdamF/submission.md` → "Copy" (this will be your template to modify for your submission)
-- **Right-click** in your new nickname folder → "Paste"
+- **Right-click** in your new nickname folder → "Paste" (this is the file you will modify for your submission)
 - **Double-click** the copied `submission.md` (i.e. the one in your student folder) to open and edit it
-- Edit `submission.md` with your info and two cool pictures of you and/or your interests (these are public images)
+- Edit `submission.md` with your info and add two cool pictures of you and/or your interests
+  - **Important:** Save the image files in your student folder (e.g., `photo1.jpg`, `photo2.png`)
+  - **Why?** The images need to be in your folder to be included in your GitHub submission
+  - **Note:** These will be public images, so choose appropriate photos
 - **💾 Save your work:** Press `Ctrl+S` to save the file after making your edits
 - **🔄 Commit your progress:** After saving, commit your changes to protect your work:
   - Press `Ctrl+Shift+G` to open Source Control
@@ -156,6 +161,12 @@ It's not just for code - it's for creating beautiful, reproducible documents tha
 - Download and install Quarto for your operating system
 - Verify installation: Open terminal/command prompt and type `quarto --version`
 
+- **💡 Recommended:** Install the Quarto extension in Cursor AI for better editing experience:
+  - Press `Ctrl+Shift+X` to open Extensions
+  - Search for "Quarto"
+  - Install the "Quarto" extension by Quarto
+  - **Why?** This gives you syntax highlighting, live preview, and better editing support for `.qmd` files
+
 ### 7.  Test Quarto
 
 Create a simple test document:
@@ -184,10 +195,15 @@ Create a simple test document:
    - OR press `Ctrl+Shift+P` → type "Terminal: Create New Terminal" → press Enter
    
    **Navigating to Your File:**
-   - The terminal should automatically open in your project folder
-   - If not, you'll need to navigate there. Type: `cd "C:\buad442Fall2025\challenges\01-Tech-Setup-Challenge\student-submissions\YourNickNameLastInitial"`
+   - The terminal opens in your project root folder, but you need to be in your student folder
+   - Navigate to your student folder: `cd "C:\buad442Fall2025\challenges\01-Tech-Setup-Challenge\student-submissions\YourNickNameLastInitial"`
    - Replace `YourNickNameLastInitial` with your actual folder name
    - **💡 Pro Tip:** Press the `Tab` key while typing to auto-complete folder names! This saves time and prevents typos.
+   
+   **Alternative (if you installed the Quarto extension):**
+   - Open your `test.qmd` file in Cursor AI
+   - Look for the **"Preview"** button in the top-right corner of the editor
+   - Click it to render and view your document without using the terminal!
    
    **Running the Render Command:**
    - Type: `quarto render test.qmd` and press Enter
