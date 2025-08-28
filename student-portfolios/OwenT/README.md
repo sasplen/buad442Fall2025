@@ -1,4 +1,4 @@
-# 👨‍🎓 Student Portfolio - Adam 🚴
+# 👨‍🎓 Student Portfolio - Owen 🚴
 
 ---
 
@@ -14,10 +14,10 @@
 
 ## 🖼️ Portfolio Images
 
-### My beta fish
-![My pet](/Users/owentatlonghari/Library/CloudStorage/OneDrive-UniversityofDelaware-o365/MISY442/buad442Fall2025/IMG_0822.jpg)
+
+![My pet](../../IMG_0822.jpg)
 
 ### Cheeseburger
-![Me purchasing my large ceramic cheeseburger](/Users/owentatlonghari/Library/CloudStorage/OneDrive-UniversityofDelaware-o365/MISY442/buad442Fall2025/IMG_2398.jpg)
+![Me purchasing my large ceramic cheeseburger](../../IMG_2398.jpg)
 
 
