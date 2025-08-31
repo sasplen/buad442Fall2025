@@ -7,4 +7,6 @@ format: html
 
 This is my first quarto document. My name is Aidan
 
-I'm a big baseball fan and love following the sport throughout the season. Whether it's watching games, keeping up with stats, or discussing the latest trades and playoff races, baseball is definitely one of my biggest passions.
+## My Love for Baseball
+
+I have a deep passion for baseball that has been a significant part of my life. From playing little league as a kid to following the major leagues, baseball has taught me valuable lessons about teamwork, perseverance, and the importance of practice. I love the strategy involved in the game, the excitement of a close match, and the way it brings people together. Whether I'm watching a game, playing catch, or analyzing player statistics, baseball continues to be one of my favorite pastimes and a sport that I'm truly passionate about.
