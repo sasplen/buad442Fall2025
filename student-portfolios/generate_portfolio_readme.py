@@ -1,5 +1,5 @@
 
-ails#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 Student Portfolio README Generator
 
@@ -142,11 +142,11 @@ This README is automatically generated and updated when changes are made to stud
                 if img.get('is_external', False):
                     # External URL - use the full URL with size parameters
                     # GitHub doesn't support resizing external URLs, so we'll use inline styles
-                    thumbnails_html += f'<img src="{img["filename"]}" alt="{img["alt"]}" title="{img["alt"]}" width="150" height="85" style="object-fit: contain; margin: 2px;">'
+                    thumbnails_html += f'<img src="{img["filename"]}" alt="{img["alt"]}" title="{img["alt"]}" width="150" style="max-height: 85px; object-fit: contain; margin: 2px;">'
                 else:
-                    # Local file - use original image with HTML sizing
-                    # GitHub will respect the width/height attributes
-                    thumbnails_html += f'<img src="{folder_name}/{img["filename"]}" alt="{img["alt"]}" title="{img["alt"]}" width="150" height="85">'
+                    # Local file - use original image with width only to preserve aspect ratio
+                    # GitHub will respect the width attribute and auto-adjust height
+                    thumbnails_html += f'<img src="{folder_name}/{img["filename"]}" alt="{img["alt"]}" title="{img["alt"]}" width="150">'
         
         if not thumbnails_html:
             thumbnails_html = "No images"
