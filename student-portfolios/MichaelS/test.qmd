@@ -1,0 +1,12 @@
+---
+title: "My First Quarto Document"
+format: html
+---
+
+# Hello World!
+
+This is my first Quarto document. My nick name is MichaelS
+
+## My Passion for Travel
+
+I have a deep passion for traveling and exploring new places around the world. Having visited 5 continents, I love experiencing different cultures, trying new foods, and meeting people from diverse backgrounds. Some of my most memorable adventures include hiking to the top of mountains in Chile and encountering wildlife like zebras in their natural habitats. Travel has taught me to be adaptable, open-minded, and appreciative of the world's incredible diversity.
