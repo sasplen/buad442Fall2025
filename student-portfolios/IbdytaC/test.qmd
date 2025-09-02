@@ -1,0 +1,13 @@
+---
+title: "My First Quarto Document"
+format: html
+---
+
+# Hello World! 
+
+This is my first Quarto document. My nick name is IbdytaC.
+
+## About Me
+
+I have a deep passion for horses and travel that has shaped many of my life experiences. There's something magical about the connection between humans and horses - their gentle nature, strength, and intelligence never cease to amaze me. Whether I'm riding through open fields or simply spending time caring for these magnificent animals, horses bring me a sense of peace and joy that's hard to find elsewhere. My love for travel complements this passion perfectly, as I've been fortunate to explore different cultures and landscapes around the world. From the rolling hills of the countryside where I can ride horses to bustling cities that offer new perspectives, travel has broadened my horizons and given me countless memories. These two passions - horses and travel - have taught me the importance of adventure, connection, and appreciating the beauty that exists both in nature and in the diverse cultures of our world.
+
