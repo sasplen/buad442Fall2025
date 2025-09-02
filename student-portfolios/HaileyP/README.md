@@ -12,10 +12,10 @@
 | **Interesting Fact2** | I started running again this summer, and I am loving it. |
 
 ---
-### My Invention: The Invisible Pool Toy
-![My twin and I:](HaddonfieldPhoto.jpeg)
+### About Me!
+![My twin and I:](TwinPhoto.jpeg)
 
 ### Personal Photo
-![Running in Haddonfield:](TwinPhoto.jpeg)
+![Running in Haddonfield:](HaddonfieldPhoto.jpeg)
 
 
