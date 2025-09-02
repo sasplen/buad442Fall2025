@@ -9,6 +9,7 @@ This README is automatically generated and updated when changes are made to stud
 | Student | Nickname | Interesting Facts | Portfolio | Thumbnails |
 |---------|----------|-------------------|-----------|------------|
 | AdamF | Adam | Inventor of "The Invisible Pool Toy" - hold a pate...<br>I like biking in cities and on gravel rail trails. | [View Portfolio](AdamF/README.md) | <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpU-_uS7d7czuDb5wBpTui3ahBAFzJAIMpJA&s" alt="The Invisible Pool Toy" title="The Invisible Pool Toy" width="150" style="max-height: 85px; object-fit: contain; margin: 2px;"><img src="AdamF/IMG_1783.png" alt="Adam - With family on the Rehoboth-Lewes Beach Bike Trail" title="Adam - With family on the Rehoboth-Lewes Beach Bike Trail" width="150"> |
+| EeshaS | Eesha | I have run 5 half-marathons so far<br>I have 2 younger siblings | [View Portfolio](EeshaS/README.md) | <img src="EeshaS/Sunset.jpg" alt="Sunrise" title="Sunrise" width="150"><img src="EeshaS/FAM.jpeg" alt="Family Member" title="Family Member" width="150"> |
 | JaredW | Jared | I enjoy learning new subjects.<br>I like drawing and playing video games. | [View Portfolio](JaredW/README.md) | <img src="JaredW/videogames.jpg" alt="Gaming" title="Gaming" width="150"><img src="JaredW/studying.jpg" alt="Studying" title="Studying" width="150"> |
 | MichaelS | Michael | I've been to 5 continents!<br>My work has been featured in an art exhibition | [View Portfolio](MichaelS/README.md) | <img src="MichaelS/unnamed.jpg" alt="Zebras" title="Zebras" width="150"> |
 
