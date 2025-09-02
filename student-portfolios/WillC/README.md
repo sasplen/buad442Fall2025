@@ -14,9 +14,9 @@
 
 ## 🖼️ Portfolio Images
 
-### Me in Korea at Namsan Tower
-![Me at Namsan Tower](IMG_7448.jpg)
 ### Snowboarding with Friends
-![Me and Friends on the Mountain](IMG_7920.jpg)
+![Me and Friends on the Mountain](IMG_7448.jpg)
+### Me in Korea at Namsan Tower
+![Me at Namsan Tower](IMG_7920.jpg)
 
 
