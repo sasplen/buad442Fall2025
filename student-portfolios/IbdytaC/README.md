@@ -6,9 +6,9 @@
 
 | **Field** | **Details** |
 |-----------|-------------|
-| **Nickname/Pseudonym** | Ibdyta |
-| **Interesting Fact** | I went horse riding this summer! |
-| **Interesting Fact2** | I have been to 7 countries. |
+| **Nickname/Pseudonym** | Ibdyta. |
+| **Interesting Fact** | I went horse riding this summer!! |
+| **Interesting Fact2** | I have been to 7 countries |
 
 ---
 
