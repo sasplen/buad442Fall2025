@@ -9,6 +9,7 @@
 | **Nickname/Pseudonym** | Sam |
 | **Interesting Fact** | I have climbed Mt Kilimanjaro |
 | **Interesting Fact2** | I speak Russian |
+| **Soccer Interest** | I am passionate about soccer and love playing and watching the sport |
 
 ---
 
