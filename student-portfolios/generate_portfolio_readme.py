@@ -1,4 +1,5 @@
-#!/usr/bin/env python3
+
+ails#!/usr/bin/env python3
 """
 Student Portfolio README Generator
 
@@ -81,6 +82,9 @@ def extract_student_info(readme_path: Path) -> Dict[str, str]:
     return info
 
 
+# Removed thumbnail generation function - using simple HTML sizing instead
+
+
 def generate_portfolio_readme(portfolio_dir: Path) -> str:
     """
     Generate the main portfolio README.md content.
@@ -112,39 +116,7 @@ Welcome to the BUAD 442 Student Portfolio Collection!
 
 This README is automatically generated and updated when changes are made to student portfolios.
 
-<style>
-.portfolio-table img {
-    max-width: 150px;
-    max-height: 85px;
-    object-fit: contain;
-    margin: 2px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease;
-}
-.portfolio-table img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-.portfolio-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-.portfolio-table th, .portfolio-table td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: left;
-    vertical-align: top;
-}
-.portfolio-table th {
-    background-color: #f8f9fa;
-    font-weight: bold;
-}
-</style>
-
 ## 📊 Current Students
-
-<div class="portfolio-table">
 
 | Student | Nickname | Interesting Facts | Portfolio | Thumbnails |
 |---------|----------|-------------------|-----------|------------|
@@ -168,11 +140,13 @@ This README is automatically generated and updated when changes are made to stud
         if 'images' in student and student['images']:
             for img in student['images']:
                 if img.get('is_external', False):
-                    # External URL - use the full URL
-                    thumbnails_html += f'<img src="{img["filename"]}" alt="{img["alt"]}" title="{img["alt"]}">'
+                    # External URL - use the full URL with size parameters
+                    # GitHub doesn't support resizing external URLs, so we'll use inline styles
+                    thumbnails_html += f'<img src="{img["filename"]}" alt="{img["alt"]}" title="{img["alt"]}" width="150" height="85" style="object-fit: contain; margin: 2px;">'
                 else:
-                    # Local file - use relative path
-                    thumbnails_html += f'<img src="{folder_name}/{img["filename"]}" alt="{img["alt"]}" title="{img["alt"]}">'
+                    # Local file - use original image with HTML sizing
+                    # GitHub will respect the width/height attributes
+                    thumbnails_html += f'<img src="{folder_name}/{img["filename"]}" alt="{img["alt"]}" title="{img["alt"]}" width="150" height="85">'
         
         if not thumbnails_html:
             thumbnails_html = "No images"
@@ -180,8 +154,6 @@ This README is automatically generated and updated when changes are made to stud
         content += f"| {folder_name} | {nickname} | {facts_display} | [View Portfolio]({folder_name}/README.md) | {thumbnails_html} |\n"
     
     content += f"""
-</div>
-
 ## 🆕 How to Add Your Portfolio
 
 1. Create a new folder with your name (e.g., `YourName`)
