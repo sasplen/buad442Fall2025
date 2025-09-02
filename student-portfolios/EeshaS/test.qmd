@@ -1,0 +1,18 @@
+---
+title: "My First Quarto Document"
+format: html
+---
+
+# Hello World! 👋
+
+This is my first Quarto document. My nick name is Eesha S. 
+
+::: {.callout-note}
+## AI-Generated Content
+The following section about Running was created using Cursor AI's built-in AI assistance feature. This demonstrates how AI can help generate meaningful, personalized content for documents.
+
+
+## My Passion for Running
+Running has become one of my greatest passions and a fundamental part of who I am. There's something incredibly liberating about lacing up my shoes and hitting the pavement, whether it's an early morning jog through quiet neighborhoods or a challenging trail run through nature. Running has taught me discipline, perseverance, and the importance of setting and achieving personal goals. Each run is different - sometimes it's about pushing my limits and setting new personal records, while other times it's simply about clearing my mind and enjoying the rhythm of my footsteps. The sense of accomplishment after completing a long run or reaching a new milestone is unmatched. Running has also introduced me to a wonderful community of fellow runners who share the same passion and understand the unique challenges and rewards that come with this sport.
+
+
