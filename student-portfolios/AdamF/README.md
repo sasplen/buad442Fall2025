@@ -1,8 +1,8 @@
-# 👨‍🎓 Student Portfolio - Adam 🚴
+# 👨‍🎓 Student Portfolio - Adam F. 🚴
 
 ---
 
-## 📋 Student Information
+## 📋 Student Information For Reading
 
 | **Field** | **Details** |
 |-----------|-------------|
