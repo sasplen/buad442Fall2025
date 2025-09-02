@@ -50,6 +50,34 @@ def extract_student_info(readme_path: Path) -> Dict[str, str]:
     # Extract student name from folder name
     info['folder_name'] = readme_path.parent.name
     
+    # Extract image information
+    images = []
+    # Look for markdown image syntax: ![alt text](filename)
+    image_matches = re.findall(r'!\[([^\]]*)\]\(([^)]+)\)', content)
+    
+    for alt_text, filename in image_matches:
+        # Handle both local files and external URLs
+        if filename.startswith('http'):
+            # External URL - include as is
+            images.append({
+                'alt': alt_text.strip(),
+                'filename': filename,
+                'path': None,
+                'is_external': True
+            })
+        else:
+            # Local file - check if it exists
+            image_path = readme_path.parent / filename
+            if image_path.exists():
+                images.append({
+                    'alt': alt_text.strip(),
+                    'filename': filename,
+                    'path': image_path,
+                    'is_external': False
+                })
+    
+    info['images'] = images[:2]  # Limit to first 2 images
+    
     return info
 
 
@@ -84,10 +112,42 @@ Welcome to the BUAD 442 Student Portfolio Collection!
 
 This README is automatically generated and updated when changes are made to student portfolios.
 
+<style>
+.portfolio-table img {
+    max-width: 150px;
+    max-height: 85px;
+    object-fit: contain;
+    margin: 2px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+.portfolio-table img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.portfolio-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.portfolio-table th, .portfolio-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+}
+.portfolio-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+</style>
+
 ## 📊 Current Students
 
-| Student | Nickname | Interesting Facts | Portfolio |
-|---------|----------|-------------------|-----------|
+<div class="portfolio-table">
+
+| Student | Nickname | Interesting Facts | Portfolio | Thumbnails |
+|---------|----------|-------------------|-----------|------------|
 """
     
     for student in students:
@@ -103,9 +163,25 @@ This README is automatically generated and updated when changes are made to stud
         # Combine facts for display
         facts_display = f"{fact1_short}<br>{fact2_short}"
         
-        content += f"| {folder_name} | {nickname} | {facts_display} | [View Portfolio]({folder_name}/README.md) |\n"
+        # Generate thumbnail HTML
+        thumbnails_html = ""
+        if 'images' in student and student['images']:
+            for img in student['images']:
+                if img.get('is_external', False):
+                    # External URL - use the full URL
+                    thumbnails_html += f'<img src="{img["filename"]}" alt="{img["alt"]}" title="{img["alt"]}">'
+                else:
+                    # Local file - use relative path
+                    thumbnails_html += f'<img src="{folder_name}/{img["filename"]}" alt="{img["alt"]}" title="{img["alt"]}">'
+        
+        if not thumbnails_html:
+            thumbnails_html = "No images"
+        
+        content += f"| {folder_name} | {nickname} | {facts_display} | [View Portfolio]({folder_name}/README.md) | {thumbnails_html} |\n"
     
     content += f"""
+</div>
+
 ## 🆕 How to Add Your Portfolio
 
 1. Create a new folder with your name (e.g., `YourName`)
