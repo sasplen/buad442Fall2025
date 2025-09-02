@@ -1,0 +1,12 @@
+---
+title: "My First Quarto Document"
+format: html
+---
+
+# Hello World! 👋
+
+This is my first Quarto document. My nick name is Jared W.
+
+## My Interests
+
+I'm passionate about science fiction and love exploring futuristic concepts, space exploration, and technological advancements through books, movies, and TV shows. Some of my favorite sci-fi works include classics like "Dune" and "The Matrix," as well as modern series that push the boundaries of what's possible. I find the genre's ability to blend scientific concepts with imaginative storytelling fascinating, and it often inspires me to think about the future of technology and human society.
