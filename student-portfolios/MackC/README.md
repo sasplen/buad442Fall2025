@@ -15,11 +15,11 @@
 ## 🖼️ Portfolio Images
 
 ### Photo from game warmups:
-![Game warmup photo](../../IMG_1264.PNG)
+![Game warmup photo](IMG_1264.PNG)
 
 
 ### Personal Photo
-![Photo with dog](../../IMG_3692.JPG)
+![Photo with dog](IMG_3692.JPG)
 
 
 
