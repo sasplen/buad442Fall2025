@@ -13,9 +13,9 @@
 
 ---
 ### My Invention: The Invisible Pool Toy
-![My twin and I:](View recent photos.jpeg)
+![My twin and I:](HaddonfieldPhoto.jpeg)
 
 ### Personal Photo
-![Running in Haddonfield:](View recent photos1.jpeg)
+![Running in Haddonfield:](TwinPhoto.jpeg)
 
 
