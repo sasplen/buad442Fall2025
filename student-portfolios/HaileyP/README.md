@@ -3,8 +3,7 @@
 ---
 
 ## 📋 Student Information
-git config --global user.name "Hailey Pease"
-git config -- global user.email "hpease@udel.edu"
+
 
 | **Field** | **Details** |
 |-----------|-------------|
