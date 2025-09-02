@@ -4,7 +4,6 @@ on:
   push:
     paths:
       - 'student-portfolios/**/README.md'
-      - 'student-portfolios/README.md'
   workflow_dispatch:  # Allow manual triggering
 
 jobs:
