@@ -14,10 +14,8 @@
 ---
 
 ## 🖼️ Portfolio Images
+! [My twin and I:] (View recent photos.jpeg)
 
-### My twin and I: View recent photos.jpeg
-
-
-### Running in Haddonfield: View recent photos1.jpeg
+![Running in Haddonfield:] (View recent photos1.jpeg)
 
 
