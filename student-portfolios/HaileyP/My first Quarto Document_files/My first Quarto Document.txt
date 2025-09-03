@@ -1,0 +1,12 @@
+---
+title: "My first Quarto Document"
+format: html
+---
+
+#Hello World
+
+This is my first Quarto document. My nick name is HaileyP.
+
+## My Interest in Running
+
+I have a deep passion for running that has become an integral part of my life. Whether it's early morning jogs through the neighborhood, challenging trail runs in the mountains, or participating in local 5K races, running provides me with both physical and mental clarity. I love how it allows me to push my limits, set new personal records, and experience the outdoors in a unique way. The rhythmic sound of my footsteps, the feeling of accomplishment after a long run, and the sense of community I find among fellow runners all contribute to why this activity means so much to me. Running has taught me discipline, perseverance, and the importance of setting and achieving goals, both on the track and in life.
