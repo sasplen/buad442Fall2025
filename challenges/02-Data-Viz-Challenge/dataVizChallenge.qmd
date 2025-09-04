@@ -6,16 +6,18 @@ format:
   pdf: default
 execute:
   echo: true
-  eval: false
+  eval: true
 ---
 
 # 📈 Data Viz Challenge - Quick Start Guide
 
 ## Challenge Overview
 
-In this challenge, you'll set up R inside Cursor (VS Code–compatible), get comfortable with terminals, shells, and command lines, and then prepare to build a two-panel or two-facet ggplot using the Palmer Penguins dataset to illustrate Simpson's paradox.
+In this challenge, you'll set up R inside Cursor (VS Code–compatible), get comfortable with terminals, shells, and command lines, and then complete a real Simpson's Paradox analysis by forking and modifying a GitHub repository.
 
-By the end of Part 1, you will be able to run R code from Cursor and render R chunks in Quarto. Plotting tasks are scaffolded with placeholders you will complete later.
+**Your Mission:** Fork the [Simpson's Paradox repository](https://github.com/flyaflya/simpsonParadox), use Cursor's AI agent to create a compelling side-by-side comparison plot, and render a professional README.md file.
+
+By the end of this challenge, you will be able to run R code from Cursor, render Quarto documents, and collaborate on GitHub repositories.
 
 ## Part 1: R in Cursor Setup ⚙️
 
@@ -48,39 +50,7 @@ install.packages("languageserver")
 Cursor may prompt to install `languageserver` for you automatically; accepting that prompt is fine.
 :::
 
-### 4. Recommended tools for better plot viewing
-
-For improved ggplot visualization that scales with your screen:
-
-**Option 1: httpgd (Recommended)**
-```r
-install.packages("httpgd")
-```
-- Creates a web-based plot viewer that opens in your browser
-- Scalable, interactive, and high-quality SVG plots
-- Works great with the R extension
-
-**Option 2: R Plot Viewer Extension**
-- In Cursor: `Ctrl+Shift+X` → search for "R Plot Viewer" 
-- Provides a dedicated plot panel with better scaling
-
-**Option 3: External viewers**
-```r
-# For Windows - opens plots in external viewer
-windows()  # before creating plots
-
-# For macOS
-quartz()
-
-# For Linux
-x11()
-```
-
-::: {.callout-tip}
-After installing `httpgd`, restart your R session and create a plot. The R extension should automatically use the web-based viewer for better scaling and quality.
-:::
-
-### 5. Verify R works in Cursor
+### 4. Verify R works in Cursor
 
 1) Create a new file `hello.R` and add a couple lines:
 
@@ -133,81 +103,105 @@ Here's the hierarchy that helps when switching between the system terminal and t
 
 ---
 
-## Part 3: Penguins + Simpson's Paradox (Placeholders) 🐧
+## Part 3: The Real Challenge - Simpson's Paradox Repository 🐧
 
-You'll use Palmer Penguins to demonstrate how a relationship can reverse when stratified (Simpson's paradox). For now, set up the project and confirm packages install.
+Now that you have R set up, it's time for the main challenge! You'll fork a repository, complete a data visualization task, and demonstrate your GitHub collaboration skills.
 
-### A. Install and load packages
+### A. Fork the Simpson's Paradox Repository
 
-```{r}
-install.packages(c("palmerpenguins", "ggplot2"))
+1. **Go to the repository:** [https://github.com/flyaflya/simpsonParadox](https://github.com/flyaflya/simpsonParadox)
+2. **Fork the repository:** Click the "Fork" button (top right) to create your own copy
+3. **Clone your fork locally:** In Cursor, press `Ctrl+Shift+P` → "Git: Clone"
+4. **Paste your fork URL:** `https://github.com/YOUR_USERNAME/simpsonParadox`
+5. **Choose a location** to save it (e.g., `C:\`)
 
-library(palmerpenguins)
-library(ggplot2)
-data(penguins)
-```
+### B. Explore the Repository
 
-### B. Single overall trend (placeholder)
+The repository contains a `README.qmd` file that needs to be completed. Your task is to:
 
-```{r}
-ggplot(data = penguins,
-        aes(x = bill_length_mm,
-        y = bill_depth_mm)) +
-  theme_minimal(32) +
-  geom_point() +
-  scale_color_manual(values = c("darkorange","purple","cyan4")) +
-  labs(title = "Penguin bill dimensions (omit species)",
-       subtitle = "Palmer Station LTER",
-       x = "Bill length (mm)",
-       y = "Bill depth (mm)") +
-  theme(plot.title.position = "plot",
-        plot.caption = element_text(hjust = 0, face= "italic"),
-        plot.caption.position = "plot") +
-  geom_smooth(method = "lm", se = FALSE, color = "gray50")
-```
+1. **Open `README.qmd`** in Cursor
+2. **Find the section** that says "🎯 Your Task: Use Cursor's AI assistant..."
+3. **Use Cursor's AI agent** to create the side-by-side comparison plot
+4. **Render the document** to create `README.md`
 
-### C. Stratified view via facets (canonical)
+### C. Complete the Side-by-Side Plot Task
 
-```r
-# TODO: Facet by species (or island) to reveal group-wise trends
-# ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color = species)) +
-#   geom_point(alpha = 0.7) +
-#   geom_smooth(method = "lm", se = FALSE) +
-#   facet_wrap(~ species)
-```
+**Your Mission:** Replace the placeholder instructions with actual code that creates a compelling side-by-side comparison using the `patchwork` package.
 
-### D. Two-panel composition (canonical alternatives)
+**Steps:**
+1. **Ask Cursor AI:** *"Create a side-by-side comparison plot using patchwork that combines plot1 and plot2 with a title, subtitle, and caption explaining Simpson's Paradox"*
+2. **Replace the placeholder** with the generated code
+3. **Test the plot** by running the chunk
+4. **Render the document:** `quarto render README.qmd`
 
-```r
-# TODO: Show overall vs stratified side-by-side
-# Option 1: Use facets as above (keeps in one ggplot)
-# Option 2: Create two separate ggplots and combine with patchwork or gridExtra
+### D. Commit and Sync Your Work
 
-# install.packages("patchwork")
-# library(patchwork)
+1. **Save all files:** `Ctrl+Shift+S`
+2. **Stage your changes:** `Ctrl+Shift+G` → click "+" next to modified files
+3. **Commit with message:** "Complete Simpson's Paradox side-by-side comparison"
+4. **Push to GitHub:** Click "Sync Changes" or "Push"
+5. **Verify on GitHub:** Check that your `README.md` file shows the completed plot
 
-# p_overall <- ggplot(...) + ...
-# p_facet   <- ggplot(...) + ... + facet_wrap(~ species)
-# p_overall + p_facet
-```
+::: {.callout-important}
+**No Pull Request Needed!** Adam will check your GitHub repository directly for the completed `README.md` file with the side-by-side comparison plot.
+:::
 
-### E. Brief write-up (placeholder)
+### E. Key Takeaways
 
-- Explain how the overall relationship differs from the within-group relationships
-- Identify the grouping variable that flips or alters the trend (species or island)
+**The Power of Visualization:**
+
+- **Always visualize your data** before drawing conclusions from statistical models
+- A single trendline can be dangerously misleading when it masks underlying group differences
+- **P-values are not the answer** - statistical significance doesn't guarantee the relationship is meaningful or correctly interpreted
+
+**Simpson's Paradox Dangers:**
+
+- **Aggregated data can reverse relationships** - what appears to be a positive correlation overall might be negative within each group
+- **Business implications:** Making decisions based on aggregate trends without considering subgroups can lead to costly mistakes
+- **The "lurking variable" problem:** Always ask "What am I missing?" when relationships seem counterintuitive
+
+**Notable Simpson's Paradox Examples:**
+
+- **UC Berkeley admissions (1973):** Overall admission rates suggested gender bias against women, but within each department, women had equal or higher admission rates
+- **Baseball batting averages:** A player can have a higher batting average than another in both halves of a season, yet a lower overall average
+- **Medical studies:** A treatment can appear harmful overall but beneficial within each age group
+- **Marketing campaigns:** A campaign might seem ineffective overall but highly successful within specific customer segments
+
+**Best Practices:**
+
+- **Stratify your analysis** by relevant grouping variables (demographics, categories, time periods)
+- **Look for confounding variables** that might explain apparent relationships
+- **Use multiple visualization approaches** (overall vs. faceted plots, side-by-side comparisons)
+- **Question your assumptions** - if a relationship seems too good (or bad) to be true, it might be!
 
 ---
 
 ## Submission Checklist ✅
 
+**R Setup:**
+
 - [ ] R installed (Windows: path written to registry)
 - [ ] R extension installed in Cursor (plus Quarto extension)
 - [ ] `languageserver` installed
-- [ ] `httpgd` installed (recommended)
 - [ ] Able to send lines from `hello.R` to the R terminal
 - [ ] Able to run an R chunk inside a `.qmd`
-- [ ] Packages `palmerpenguins` and `ggplot2` installed
-- [ ] Placeholder plots and notes added to this document
+
+**Repository Challenge:**
+
+- [ ] Simpson's Paradox repository forked to personal GitHub account
+- [ ] Repository cloned locally in Cursor
+- [ ] README.qmd file opened and explored
+- [ ] Side-by-side comparison plot created using Cursor AI agent
+- [ ] README.qmd rendered to README.md successfully
+- [ ] Changes committed and synced to GitHub repository
+- [ ] README.md file visible on GitHub with completed plot
+
+**Understanding Simpson's Paradox:**
+
+- [ ] Can explain how overall vs. within-group relationships differ
+- [ ] Can identify the grouping variable (species) that reveals the paradox
+- [ ] Understands the dangers of relying solely on aggregate trendlines
+- [ ] Can describe at least one real-world example of Simpson's paradox
 
 ---
 

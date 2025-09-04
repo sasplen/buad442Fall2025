@@ -104,8 +104,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>📈 Data Viz Challenge - Quick Start Guide</h1>
 <section id="challenge-overview" class="level2">
 <h2 class="anchored" data-anchor-id="challenge-overview">Challenge Overview</h2>
-<p>In this challenge, you’ll set up R inside Cursor (VS Code–compatible), get comfortable with terminals, shells, and command lines, and then prepare to build a two-panel or two-facet ggplot using the Palmer Penguins dataset to illustrate Simpson’s paradox.</p>
-<p>By the end of Part 1, you will be able to run R code from Cursor and render R chunks in Quarto. Plotting tasks are scaffolded with placeholders you will complete later.</p>
+<p>In this challenge, you’ll set up R inside Cursor (VS Code–compatible), get comfortable with terminals, shells, and command lines, and then complete a real Simpson’s Paradox analysis by forking and modifying a GitHub repository.</p>
+<p><strong>Your Mission:</strong> Fork the <a href="https://github.com/flyaflya/simpsonParadox">Simpson’s Paradox repository</a>, use Cursor’s AI agent to create a compelling side-by-side comparison plot, and render a professional README.md file.</p>
+<p>By the end of this challenge, you will be able to run R code from Cursor, render Quarto documents, and collaborate on GitHub repositories.</p>
 </section>
 <section id="part-1-r-in-cursor-setup" class="level2">
 <h2 class="anchored" data-anchor-id="part-1-r-in-cursor-setup">Part 1: R in Cursor Setup ⚙️</h2>
@@ -122,10 +123,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>Open Extensions: <code>Ctrl+Shift+X</code></li>
 <li>Search for “R” (publisher: REditorSupport) and install the extension named “R”</li>
-<li>Optional but helpful extensions:
+<li>Also install this/these extensions if you haven’t already:
 <ul>
 <li>“Quarto” (for .qmd editing and preview)</li>
-<li>“VSCode-R-Debugger”</li>
 </ul></li>
 </ul>
 </section>
@@ -137,23 +137,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>In the R console that appears, run:</li>
 </ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"languageserver"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="recommended-tools-for-a-better-r-experience" class="level3">
-<h3 class="anchored" data-anchor-id="recommended-tools-for-a-better-r-experience">4. Recommended tools for a better R experience</h3>
-<ul>
-<li>radian (modern R console): see <a href="https://github.com/randy3k/radian">radian project page</a></li>
-<li>httpgd (SVG/websocket graphics device for the plot viewer):</li>
-</ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"httpgd"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>After installing httpgd, the R extension plot viewer can display SVG plots served by httpgd.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Cursor may prompt to install <code>languageserver</code> for you automatically; accepting that prompt is fine.</p>
+</div>
+</div>
 </section>
 <section id="verify-r-works-in-cursor" class="level3">
-<h3 class="anchored" data-anchor-id="verify-r-works-in-cursor">5. Verify R works in Cursor</h3>
+<h3 class="anchored" data-anchor-id="verify-r-works-in-cursor">4. Verify R works in Cursor</h3>
 <ol type="1">
 <li>Create a new file <code>hello.R</code> and add a couple lines:</li>
 </ol>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cars)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(cars<span class="sc">$</span>speed)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cars)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(cars<span class="sc">$</span>speed)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="2" type="1">
 <li><p>With the editor caret on a line, press <code>Ctrl+Enter</code> to send the current line to the active R terminal.</p></li>
 <li><p>If Cursor can’t find R automatically on Windows, set the R path:</p>
@@ -171,7 +175,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Create or open a <code>.qmd</code> file and insert an R chunk:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>R.version.string</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>R.version.string</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "R version 4.5.1 (2025-06-13 ucrt)"</code></pre>
+</div>
 </div>
 <ul>
 <li>Use the chunk toolbar (Run/Run Above/Run All) to execute. If the toolbar is hidden, place the cursor in the chunk and use <code>Ctrl+Shift+P</code> → “Quarto: Run Cell” or send lines with <code>Ctrl+Enter</code>.</li>
@@ -181,79 +188,129 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="part-2-terminals-shells-and-command-lines" class="level2">
 <h2 class="anchored" data-anchor-id="part-2-terminals-shells-and-command-lines">Part 2: Terminals, Shells, and Command Lines 🖥️</h2>
-<p>Understanding the differences helps when switching between the system terminal and the R terminal.</p>
+<p>🧩 <strong>Putting It All Together</strong></p>
+<p>Here’s the hierarchy that helps when switching between the system terminal and the R terminal:</p>
 <ul>
-<li>Terminal (or terminal emulator): The window/app that hosts a shell (e.g., Cursor’s Integrated Terminal)</li>
-<li>Shell: The command interpreter you run in a terminal
+<li><strong>Terminal</strong> → the app that gives you a text window (e.g., Cursor’s Integrated Terminal)</li>
+<li><strong>Shell</strong> → the program that runs inside that window
 <ul>
 <li>Examples (Windows): PowerShell, <code>cmd.exe</code></li>
 <li>Examples (macOS/Linux): <code>bash</code>, <code>zsh</code></li>
 </ul></li>
-<li>Command-line interface (CLI): The programs you run inside the shell (e.g., <code>R</code>, <code>quarto</code>, <code>git</code>)</li>
+<li><strong>Command line</strong> → the interaction style: typing commands into the shell</li>
+<li><strong>R Terminal</strong> → a specialized program you run from the shell, which then gives you an R-only command line</li>
 </ul>
-<p>In Cursor: - Open the integrated terminal: <code>Ctrl+`` (backtick) - Create an R terminal:</code>Ctrl+Shift+P<code>→ "R: Create R Terminal" - Use the R terminal for R commands; use the system shell (PowerShell/bash) for tools like</code>git<code>and</code>quarto`</p>
+<p><strong>In Cursor:</strong> - Open the integrated terminal: <code>Ctrl+`` (backtick) - this gives you the system shell - Create an R terminal:</code>Ctrl+Shift+P<code>→ "R: Create R Terminal" - this runs R inside the terminal - Use the R terminal for R commands; use the system shell (PowerShell/bash) for tools like</code>git<code>and</code>quarto`</p>
 <hr>
 </section>
-<section id="part-3-penguins-simpsons-paradox-placeholders" class="level2">
-<h2 class="anchored" data-anchor-id="part-3-penguins-simpsons-paradox-placeholders">Part 3: Penguins + Simpson’s Paradox (Placeholders) 🐧</h2>
-<p>You’ll use Palmer Penguins to demonstrate how a relationship can reverse when stratified (Simpson’s paradox). For now, set up the project and confirm packages install.</p>
-<section id="a.-install-and-load-packages" class="level3">
-<h3 class="anchored" data-anchor-id="a.-install-and-load-packages">A. Install and load packages</h3>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"palmerpenguins"</span>, <span class="st">"ggplot2"</span>))</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(palmerpenguins)</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="part-3-the-real-challenge---simpsons-paradox-repository" class="level2">
+<h2 class="anchored" data-anchor-id="part-3-the-real-challenge---simpsons-paradox-repository">Part 3: The Real Challenge - Simpson’s Paradox Repository 🐧</h2>
+<p>Now that you have R set up, it’s time for the main challenge! You’ll fork a repository, complete a data visualization task, and demonstrate your GitHub collaboration skills.</p>
+<section id="a.-fork-the-simpsons-paradox-repository" class="level3">
+<h3 class="anchored" data-anchor-id="a.-fork-the-simpsons-paradox-repository">A. Fork the Simpson’s Paradox Repository</h3>
+<ol type="1">
+<li><strong>Go to the repository:</strong> <a href="https://github.com/flyaflya/simpsonParadox">https://github.com/flyaflya/simpsonParadox</a></li>
+<li><strong>Fork the repository:</strong> Click the “Fork” button (top right) to create your own copy</li>
+<li><strong>Clone your fork locally:</strong> In Cursor, press <code>Ctrl+Shift+P</code> → “Git: Clone”</li>
+<li><strong>Paste your fork URL:</strong> <code>https://github.com/YOUR_USERNAME/simpsonParadox</code></li>
+<li><strong>Choose a location</strong> to save it (e.g., <code>C:\</code>)</li>
+</ol>
 </section>
-<section id="b.-single-overall-trend-placeholder" class="level3">
-<h3 class="anchored" data-anchor-id="b.-single-overall-trend-placeholder">B. Single overall trend (placeholder)</h3>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: Create a single scatterplot with a smooth trend line</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Example variables: bill_length_mm vs flipper_length_mm (or body_mass_g)</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm)) +</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co">#   geom_point(alpha = 0.7) +</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co">#   geom_smooth(method = "lm")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="b.-explore-the-repository" class="level3">
+<h3 class="anchored" data-anchor-id="b.-explore-the-repository">B. Explore the Repository</h3>
+<p>The repository contains a <code>README.qmd</code> file that needs to be completed. Your task is to:</p>
+<ol type="1">
+<li><strong>Open <code>README.qmd</code></strong> in Cursor</li>
+<li><strong>Find the section</strong> that says “🎯 Your Task: Use Cursor’s AI assistant…”</li>
+<li><strong>Use Cursor’s AI agent</strong> to create the side-by-side comparison plot</li>
+<li><strong>Render the document</strong> to create <code>README.md</code></li>
+</ol>
 </section>
-<section id="c.-stratified-view-via-facets-canonical" class="level3">
-<h3 class="anchored" data-anchor-id="c.-stratified-view-via-facets-canonical">C. Stratified view via facets (canonical)</h3>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: Facet by species (or island) to reveal group-wise trends</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color = species)) +</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co">#   geom_point(alpha = 0.7) +</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co">#   geom_smooth(method = "lm", se = FALSE) +</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co">#   facet_wrap(~ species)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="c.-complete-the-side-by-side-plot-task" class="level3">
+<h3 class="anchored" data-anchor-id="c.-complete-the-side-by-side-plot-task">C. Complete the Side-by-Side Plot Task</h3>
+<p><strong>Your Mission:</strong> Replace the placeholder instructions with actual code that creates a compelling side-by-side comparison using the <code>patchwork</code> package.</p>
+<p><strong>Steps:</strong> 1. <strong>Ask Cursor AI:</strong> <em>“Create a side-by-side comparison plot using patchwork that combines plot1 and plot2 with a title, subtitle, and caption explaining Simpson’s Paradox”</em> 2. <strong>Replace the placeholder</strong> with the generated code 3. <strong>Test the plot</strong> by running the chunk 4. <strong>Render the document:</strong> <code>quarto render README.qmd</code></p>
 </section>
-<section id="d.-two-panel-composition-canonical-alternatives" class="level3">
-<h3 class="anchored" data-anchor-id="d.-two-panel-composition-canonical-alternatives">D. Two-panel composition (canonical alternatives)</h3>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: Show overall vs stratified side-by-side</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Option 1: Use facets as above (keeps in one ggplot)</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Option 2: Create two separate ggplots and combine with patchwork or gridExtra</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("patchwork")</span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co"># library(patchwork)</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co"># p_overall &lt;- ggplot(...) + ...</span></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="co"># p_facet   &lt;- ggplot(...) + ... + facet_wrap(~ species)</span></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="co"># p_overall + p_facet</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="d.-commit-and-sync-your-work" class="level3">
+<h3 class="anchored" data-anchor-id="d.-commit-and-sync-your-work">D. Commit and Sync Your Work</h3>
+<ol type="1">
+<li><strong>Save all files:</strong> <code>Ctrl+Shift+S</code></li>
+<li><strong>Stage your changes:</strong> <code>Ctrl+Shift+G</code> → click “+” next to modified files</li>
+<li><strong>Commit with message:</strong> “Complete Simpson’s Paradox side-by-side comparison”</li>
+<li><strong>Push to GitHub:</strong> Click “Sync Changes” or “Push”</li>
+<li><strong>Verify on GitHub:</strong> Check that your <code>README.md</code> file shows the completed plot</li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>No Pull Request Needed!</strong> Adam will check your GitHub repository directly for the completed <code>README.md</code> file with the side-by-side comparison plot.</p>
+</div>
+</div>
 </section>
-<section id="e.-brief-write-up-placeholder" class="level3">
-<h3 class="anchored" data-anchor-id="e.-brief-write-up-placeholder">E. Brief write-up (placeholder)</h3>
+<section id="e.-key-takeaways" class="level3">
+<h3 class="anchored" data-anchor-id="e.-key-takeaways">E. Key Takeaways</h3>
+<p><strong>The Power of Visualization:</strong></p>
 <ul>
-<li>Explain how the overall relationship differs from the within-group relationships</li>
-<li>Identify the grouping variable that flips or alters the trend (species or island)</li>
+<li><strong>Always visualize your data</strong> before drawing conclusions from statistical models</li>
+<li>A single trendline can be dangerously misleading when it masks underlying group differences</li>
+<li><strong>P-values are not the answer</strong> - statistical significance doesn’t guarantee the relationship is meaningful or correctly interpreted</li>
+</ul>
+<p><strong>Simpson’s Paradox Dangers:</strong></p>
+<ul>
+<li><strong>Aggregated data can reverse relationships</strong> - what appears to be a positive correlation overall might be negative within each group</li>
+<li><strong>Business implications:</strong> Making decisions based on aggregate trends without considering subgroups can lead to costly mistakes</li>
+<li><strong>The “lurking variable” problem:</strong> Always ask “What am I missing?” when relationships seem counterintuitive</li>
+</ul>
+<p><strong>Notable Simpson’s Paradox Examples:</strong></p>
+<ul>
+<li><strong>UC Berkeley admissions (1973):</strong> Overall admission rates suggested gender bias against women, but within each department, women had equal or higher admission rates</li>
+<li><strong>Baseball batting averages:</strong> A player can have a higher batting average than another in both halves of a season, yet a lower overall average</li>
+<li><strong>Medical studies:</strong> A treatment can appear harmful overall but beneficial within each age group</li>
+<li><strong>Marketing campaigns:</strong> A campaign might seem ineffective overall but highly successful within specific customer segments</li>
+</ul>
+<p><strong>Best Practices:</strong></p>
+<ul>
+<li><strong>Stratify your analysis</strong> by relevant grouping variables (demographics, categories, time periods)</li>
+<li><strong>Look for confounding variables</strong> that might explain apparent relationships</li>
+<li><strong>Use multiple visualization approaches</strong> (overall vs.&nbsp;faceted plots, side-by-side comparisons)</li>
+<li><strong>Question your assumptions</strong> - if a relationship seems too good (or bad) to be true, it might be!</li>
 </ul>
 <hr>
 </section>
 </section>
 <section id="submission-checklist" class="level2">
 <h2 class="anchored" data-anchor-id="submission-checklist">Submission Checklist ✅</h2>
+<p><strong>R Setup:</strong></p>
 <ul class="task-list">
 <li><label><input type="checkbox">R installed (Windows: path written to registry)</label></li>
 <li><label><input type="checkbox">R extension installed in Cursor (plus Quarto extension)</label></li>
 <li><label><input type="checkbox"><code>languageserver</code> installed</label></li>
-<li><label><input type="checkbox"><code>httpgd</code> installed (recommended)</label></li>
 <li><label><input type="checkbox">Able to send lines from <code>hello.R</code> to the R terminal</label></li>
 <li><label><input type="checkbox">Able to run an R chunk inside a <code>.qmd</code></label></li>
-<li><label><input type="checkbox">Packages <code>palmerpenguins</code> and <code>ggplot2</code> installed</label></li>
-<li><label><input type="checkbox">Placeholder plots and notes added to this document</label></li>
+</ul>
+<p><strong>Repository Challenge:</strong></p>
+<ul class="task-list">
+<li><label><input type="checkbox">Simpson’s Paradox repository forked to personal GitHub account</label></li>
+<li><label><input type="checkbox">Repository cloned locally in Cursor</label></li>
+<li><label><input type="checkbox">README.qmd file opened and explored</label></li>
+<li><label><input type="checkbox">Side-by-side comparison plot created using Cursor AI agent</label></li>
+<li><label><input type="checkbox">README.qmd rendered to README.md successfully</label></li>
+<li><label><input type="checkbox">Changes committed and synced to GitHub repository</label></li>
+<li><label><input type="checkbox">README.md file visible on GitHub with completed plot</label></li>
+</ul>
+<p><strong>Understanding Simpson’s Paradox:</strong></p>
+<ul class="task-list">
+<li><label><input type="checkbox">Can explain how overall vs.&nbsp;within-group relationships differ</label></li>
+<li><label><input type="checkbox">Can identify the grouping variable (species) that reveals the paradox</label></li>
+<li><label><input type="checkbox">Understands the dangers of relying solely on aggregate trendlines</label></li>
+<li><label><input type="checkbox">Can describe at least one real-world example of Simpson’s paradox</label></li>
 </ul>
 <hr>
 </section>
