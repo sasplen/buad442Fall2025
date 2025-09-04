@@ -1,0 +1,220 @@
+---
+title: "Data Visualization Challenge"
+subtitle: "R Setup in Cursor + Penguins and Simpson's Paradox"
+format:
+  html: default
+  pdf: default
+execute:
+  echo: true
+  eval: false
+---
+
+# 📈 Data Viz Challenge - Quick Start Guide
+
+## Challenge Overview
+
+In this challenge, you'll set up R inside Cursor (VS Code–compatible), get comfortable with terminals, shells, and command lines, and then prepare to build a two-panel or two-facet ggplot using the Palmer Penguins dataset to illustrate Simpson's paradox.
+
+By the end of Part 1, you will be able to run R code from Cursor and render R chunks in Quarto. Plotting tasks are scaffolded with placeholders you will complete later.
+
+## Part 1: R in Cursor Setup ⚙️
+
+Follow these steps (adapted from the official R extension guidance) to get R working smoothly in Cursor.
+
+### 1. Install R
+
+- Download and install R (version ≥ 3.4.0) from [CRAN R downloads](https://cran.r-project.org/)
+- During installation on Windows, select the option to **Write R path to the registry** (recommended)
+
+### 2. Install the R extension in Cursor
+
+- Open Extensions: `Ctrl+Shift+X`
+- Search for "R" (publisher: REditorSupport) and install the extension named "R"
+- Also install this/these extensions if you haven't already:
+  - "Quarto" (for .qmd editing and preview)
+
+### 3. Install languageserver (enables R language features)
+
+You can install directly from an R session. In Cursor:
+
+- Open Command Palette: `Ctrl+Shift+P` → type "R: Create R Terminal" → Enter
+- In the R console that appears, run:
+
+```r
+install.packages("languageserver")
+```
+
+::: {.callout-note}
+Cursor may prompt to install `languageserver` for you automatically; accepting that prompt is fine.
+:::
+
+### 4. Recommended tools for better plot viewing
+
+For improved ggplot visualization that scales with your screen:
+
+**Option 1: httpgd (Recommended)**
+```r
+install.packages("httpgd")
+```
+- Creates a web-based plot viewer that opens in your browser
+- Scalable, interactive, and high-quality SVG plots
+- Works great with the R extension
+
+**Option 2: R Plot Viewer Extension**
+- In Cursor: `Ctrl+Shift+X` → search for "R Plot Viewer" 
+- Provides a dedicated plot panel with better scaling
+
+**Option 3: External viewers**
+```r
+# For Windows - opens plots in external viewer
+windows()  # before creating plots
+
+# For macOS
+quartz()
+
+# For Linux
+x11()
+```
+
+::: {.callout-tip}
+After installing `httpgd`, restart your R session and create a plot. The R extension should automatically use the web-based viewer for better scaling and quality.
+:::
+
+### 5. Verify R works in Cursor
+
+1) Create a new file `hello.R` and add a couple lines:
+
+```r
+summary(cars)
+mean(cars$speed)
+```
+
+2) With the editor caret on a line, press `Ctrl+Enter` to send the current line to the active R terminal.
+
+3) If Cursor can't find R automatically on Windows, set the R path:
+   - Open Settings: `Ctrl+,`
+   - Search for "Rterm"
+   - Set `R › Rterm: Windows` to something like `C:\\Program Files\\R\\R-4.4.1\\bin\\x64\\R.exe` (adjust version/path as installed)
+
+### 6. Running R chunks in Quarto (.qmd)
+
+With the R extension (and Quarto extension installed), you can execute R code chunks inside Quarto documents.
+
+- Create or open a `.qmd` file and insert an R chunk:
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+R.version.string
+```
+
+- Use the chunk toolbar (Run/Run Above/Run All) to execute. If the toolbar is hidden, place the cursor in the chunk and use `Ctrl+Shift+P` → "Quarto: Run Cell" or send lines with `Ctrl+Enter`.
+
+---
+
+## Part 2: Terminals, Shells, and Command Lines 🖥️
+
+🧩 **Putting It All Together**
+
+Here's the hierarchy that helps when switching between the system terminal and the R terminal:
+
+- **Terminal** → the app that gives you a text window (e.g., Cursor's Integrated Terminal)
+- **Shell** → the program that runs inside that window
+  - Examples (Windows): PowerShell, `cmd.exe`
+  - Examples (macOS/Linux): `bash`, `zsh`
+- **Command line** → the interaction style: typing commands into the shell
+- **R Terminal** → a specialized program you run from the shell, which then gives you an R-only command line
+
+**In Cursor:**
+- Open the integrated terminal: `Ctrl+`` (backtick) - this gives you the system shell
+- Create an R terminal: `Ctrl+Shift+P` → "R: Create R Terminal" - this runs R inside the terminal
+- Use the R terminal for R commands; use the system shell (PowerShell/bash) for tools like `git` and `quarto`
+
+---
+
+## Part 3: Penguins + Simpson's Paradox (Placeholders) 🐧
+
+You'll use Palmer Penguins to demonstrate how a relationship can reverse when stratified (Simpson's paradox). For now, set up the project and confirm packages install.
+
+### A. Install and load packages
+
+```{r}
+install.packages(c("palmerpenguins", "ggplot2"))
+
+library(palmerpenguins)
+library(ggplot2)
+data(penguins)
+```
+
+### B. Single overall trend (placeholder)
+
+```{r}
+ggplot(data = penguins,
+        aes(x = bill_length_mm,
+        y = bill_depth_mm)) +
+  theme_minimal(32) +
+  geom_point() +
+  scale_color_manual(values = c("darkorange","purple","cyan4")) +
+  labs(title = "Penguin bill dimensions (omit species)",
+       subtitle = "Palmer Station LTER",
+       x = "Bill length (mm)",
+       y = "Bill depth (mm)") +
+  theme(plot.title.position = "plot",
+        plot.caption = element_text(hjust = 0, face= "italic"),
+        plot.caption.position = "plot") +
+  geom_smooth(method = "lm", se = FALSE, color = "gray50")
+```
+
+### C. Stratified view via facets (canonical)
+
+```r
+# TODO: Facet by species (or island) to reveal group-wise trends
+# ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color = species)) +
+#   geom_point(alpha = 0.7) +
+#   geom_smooth(method = "lm", se = FALSE) +
+#   facet_wrap(~ species)
+```
+
+### D. Two-panel composition (canonical alternatives)
+
+```r
+# TODO: Show overall vs stratified side-by-side
+# Option 1: Use facets as above (keeps in one ggplot)
+# Option 2: Create two separate ggplots and combine with patchwork or gridExtra
+
+# install.packages("patchwork")
+# library(patchwork)
+
+# p_overall <- ggplot(...) + ...
+# p_facet   <- ggplot(...) + ... + facet_wrap(~ species)
+# p_overall + p_facet
+```
+
+### E. Brief write-up (placeholder)
+
+- Explain how the overall relationship differs from the within-group relationships
+- Identify the grouping variable that flips or alters the trend (species or island)
+
+---
+
+## Submission Checklist ✅
+
+- [ ] R installed (Windows: path written to registry)
+- [ ] R extension installed in Cursor (plus Quarto extension)
+- [ ] `languageserver` installed
+- [ ] `httpgd` installed (recommended)
+- [ ] Able to send lines from `hello.R` to the R terminal
+- [ ] Able to run an R chunk inside a `.qmd`
+- [ ] Packages `palmerpenguins` and `ggplot2` installed
+- [ ] Placeholder plots and notes added to this document
+
+---
+
+## Need Help? 🆘
+
+- R extension documentation: [VS Code R Extension Wiki](https://github.com/REditorSupport/vscode-R/wiki)
+- Quarto docs: [Quarto Guide](https://quarto.org/docs)
+- General tip: search for "VS Code" results—most answers apply to Cursor as well
+
+
