@@ -1,0 +1,11 @@
+title: "My First Quarto Document"
+format: html
+---
+
+# Hello World! 
+
+This is my first Quarto document. My nick name is Ava M.
+
+## About Me
+
+I have a passion for skiing and love exploring different mountain ranges around the world. One of my most memorable skiing experiences was in the Dolomites of northern Italy, where I had the opportunity to ski through some of the most breathtaking alpine scenery in Europe. The Dolomites offer incredible terrain with their distinctive limestone peaks and extensive lift systems connecting multiple valleys and resorts.
