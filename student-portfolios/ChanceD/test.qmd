@@ -1,0 +1,12 @@
+---
+title: "My First Quarto Document"
+format: html
+---
+
+# Hello World! 👏
+
+This is my first Quarto document. My nick name is Chance D.
+
+## My Interests
+
+One of my biggest passions is Ice Hockey! 🏒 I love everything about the sport - the speed, the strategy, the teamwork, and the excitement of being on the ice. Whether I'm playing in a local league, watching NHL games, or just shooting pucks around, hockey has been a huge part of my life. The combination of skill, physicality, and mental toughness required makes it such a rewarding sport to both play and follow.
