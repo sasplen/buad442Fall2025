@@ -1,0 +1,16 @@
+---
+title: "My First Quarto Document"
+format: html
+---
+
+# Hello World
+
+This is my first Quarto document. My nick name is JamesW
+
+## Sports and Strategy
+
+I have a deep passion for sports that goes beyond just watching games - I love analyzing the strategic elements that make each sport fascinating. Whether it's the tactical formations in soccer, the play-calling strategies in football, or the mental chess game of basketball, I find myself constantly studying how teams and athletes approach competition strategically.
+
+The combination of physical athleticism and mental strategy is what draws me to sports the most. I enjoy breaking down how coaches make in-game adjustments, how players read defensive schemes, and how teams adapt their game plans based on their opponents' strengths and weaknesses. There's something incredibly satisfying about understanding the strategic depth behind what might appear to be simple physical contests.
+
+When I'm not watching sports, I often find myself applying similar strategic thinking to other areas of life - analyzing situations from multiple angles, considering different approaches, and thinking several moves ahead. This strategic mindset has been valuable in both my academic pursuits and personal decision-making.
