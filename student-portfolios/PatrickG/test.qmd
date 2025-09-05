@@ -1,0 +1,13 @@
+---
+title: "My First Quarto Document"
+format: html
+---
+
+# Hello World!
+
+This is my first Quarto document. My nickname is PatrickG.
+
+## Running
+
+Running is one of my favorite activities. I enjoy going for runs in the morning to start my day with energy and clarity. Whether it's a quick 3-mile jog around the neighborhood or a longer trail run on the weekends, running helps me stay fit and clear my mind. I particularly love running in different weather conditions - there's something invigorating about a crisp fall morning run or pushing through a challenging hill workout. Running has taught me discipline, perseverance, and the importance of setting and achieving goals.
+
