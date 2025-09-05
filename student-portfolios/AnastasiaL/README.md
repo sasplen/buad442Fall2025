@@ -15,7 +15,7 @@
 ## 🖼️ Portfolio Images
 
 ### Traveling to Morocco
-![Erg Chebbi, Merzouga Desert](C:\Users\13023\OneDrive\Desktop\BUAD442\buad442Fall2025\student-portfolios\AnastasiaL\IMG_4065.jpg)
+![Erg Chebbi, Merzouga Desert](IMG_4065.jpg)
 
 ### Personal Photo
-![Ziplining in the Atlas Mountains]("C:\Users\13023\OneDrive\Desktop\BUAD442\buad442Fall2025\student-portfolios\AnastasiaL\IMG_4319.JPG")
+![Ziplining in the Atlas Mountains](IMG_4319.JPG)
