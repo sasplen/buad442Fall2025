@@ -9,12 +9,15 @@ on:
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
         fetch-depth: 0  # Needed for git log commands
+        token: ${{ secrets.GITHUB_TOKEN }}
     
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -42,4 +45,4 @@ jobs:
         git config --local user.name "GitHub Action"
         git add student-portfolios/README.md
         git commit -m "🤖 Auto-update portfolio README [skip ci]"
-        git push
+        git push origin HEAD:main

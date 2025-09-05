@@ -188,7 +188,7 @@ This README is automatically generated and updated when changes are made to stud
 This README is automatically updated via GitHub Actions whenever any `README.md` file in the student-portfolios folder (or its subfolders) is modified.
 
 ---
-*Last updated: {os.popen('git log -1 --format="%Y-%m-%d %H:%M:%S" -- student-portfolios/').read().strip() or 'Unknown'}*
+*Last updated: {os.popen('git log -1 --format="%Y-%m-%d %H:%M:%S" -- .').read().strip() or 'Unknown'}*
 """
     
     return content
@@ -211,7 +211,9 @@ def main():
         with open(readme_path, 'w', encoding='utf-8') as f:
             f.write(readme_content)
         print(f"Successfully generated {readme_path}")
-        print(f"Found {len([s for s in readme_content.split('|') if 'View Portfolio' in s])} student portfolios")
+        # Count students by counting lines that contain "View Portfolio"
+        student_count = readme_content.count('[View Portfolio]')
+        print(f"Found {student_count} student portfolios")
     except Exception as e:
         print(f"Error writing README.md: {e}")
         return 1
