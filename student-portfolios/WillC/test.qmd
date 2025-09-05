@@ -1,0 +1,15 @@
+---
+title:  "MY First Quarto Document"
+format: html
+---
+# Hello World! 👋
+
+This is my first Quarto document. My nick name is Will C.
+
+## My Interest in Pickleball 🏓
+
+I recently picked up pickleball as a new hobby and I'm really enjoying it! It's a great combination of tennis, badminton, and ping pong that's both fun and accessible. The sport has been growing rapidly in popularity, and I love how it brings people together for friendly competition. Whether I'm playing singles or doubles, I find the fast-paced rallies and strategic gameplay really engaging. It's also a fantastic way to stay active and meet new people in the community.
+
+## My Love for Traveling ✈️
+
+I have a deep passion for traveling and exploring new cultures around the world. This past winter, I had the incredible opportunity to visit Korea, which was an amazing experience! I got to see the beautiful Namsan Tower in Seoul, try authentic Korean cuisine, and immerse myself in the rich history and modern culture of the country. Traveling allows me to step outside my comfort zone, learn about different ways of life, and create unforgettable memories. Each new destination teaches me something valuable and broadens my perspective on the world.
