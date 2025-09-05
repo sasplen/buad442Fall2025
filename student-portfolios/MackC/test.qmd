@@ -1,0 +1,10 @@
+---
+title: "My First Quarto Document"
+format: html
+---
+
+#Hello World! 👋 
+
+This is my first Quarto document. My nick name is Mack.
+
+I'm also interested in going to the gym. My favorite lifts are the bench press and hack squat—they really help me stay motivated and track my progress. 
