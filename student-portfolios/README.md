@@ -10,7 +10,7 @@ This README is automatically generated and updated when changes are made to stud
 |---------|----------|-------------------|-----------|------------|
 | AdamF | Adam | Inventor of "The Invisible Pool Toy" - hold a pate...<br>I like biking in cities and on gravel rail trails.... | [View Portfolio](AdamF/README.md) | <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpU-_uS7d7czuDb5wBpTui3ahBAFzJAIMpJA&s" alt="The Invisible Pool Toy" title="The Invisible Pool Toy" width="150" style="max-height: 85px; object-fit: contain; margin: 2px;"><img src="AdamF/IMG_1783.png" alt="Adam - With family on the Rehoboth-Lewes Beach Bike Trail" title="Adam - With family on the Rehoboth-Lewes Beach Bike Trail" width="150"> |
 | AidanK | Aidan | I like to snowboard and I'm learning to golf<br>I want to travel to MLB stadiums across the countr... | [View Portfolio](AidanK/README.md) | <img src="AidanK/OIP.webp" alt="Citi Field" title="Citi Field" width="150"><img src="AidanK/headshot.jpg" alt="Me--> My LinkedIn headshot" title="Me--> My LinkedIn headshot" width="150"> |
-| AnastasiaL | Anastasia | I enjoy traveling the world.<br>I like pilates and yoga. | [View Portfolio](AnastasiaL/README.md) | No images |
+| AnastasiaL | Anastasia | I enjoy traveling the world.<br>I like pilates and yoga. | [View Portfolio](AnastasiaL/README.md) | <img src="AnastasiaL/IMG_4065.jpg" alt="Erg Chebbi, Merzouga Desert" title="Erg Chebbi, Merzouga Desert" width="150"><img src="AnastasiaL/IMG_4319.JPG" alt="Ziplining in the Atlas Mountains" title="Ziplining in the Atlas Mountains" width="150"> |
 | AndrewS | Andrew Szrom | Giants fan.<br>From New Jersey. | [View Portfolio](AndrewS/README.md) | <img src="AndrewS/IMG_5831.jpg" alt="Giants Fan" title="Giants Fan" width="150"> |
 | AvaM | Ava | I studied abroad in Rome last semester!<br>I have two cats. | [View Portfolio](AvaM/README.md) | <img src="AvaM/CIMG4845.jpeg" alt="This is me in Rome!" title="This is me in Rome!" width="150"><img src="AvaM/bubba.png" alt="This is one of my cats! His name is Bubba" title="This is one of my cats! His name is Bubba" width="150"> |
 | ChanceD | Chance | I am a member of the Men's Ice Hockey Team.<br>I like going to the beach and seeing my friends. | [View Portfolio](ChanceD/README.md) | No images |
@@ -68,4 +68,4 @@ This README is automatically generated and updated when changes are made to stud
 This README is automatically updated via GitHub Actions whenever any `README.md` file in the student-portfolios folder (or its subfolders) is modified.
 
 ---
-*Last updated: %Y->- (HEAD -> main, origin/main) c2d6e2f316478a969354a75b170117d240e6f15a:%M:HEAD*
+*Last updated: %Y->- (HEAD -> main, origin/main) 20dc50aa974a0d3c824e815be85dbba4f6956f25:%M:HEAD*
