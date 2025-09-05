@@ -1,0 +1,12 @@
+---
+title: "My First Quarto Document"
+format: html
+---
+
+# Hello World!
+
+This is my first Quarto document. My nick name is ZubairA.
+
+## My Interests
+
+I have a passion for both soccer and cooking. Soccer has been a significant part of my life, teaching me teamwork, discipline, and the importance of staying active. I enjoy playing with friends and following professional leagues around the world. When I'm not on the field, I love experimenting in the kitchen. Cooking allows me to be creative and brings people together over delicious meals. I particularly enjoy trying new recipes and techniques, from traditional dishes to modern fusion cuisine.
