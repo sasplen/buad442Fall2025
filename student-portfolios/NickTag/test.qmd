@@ -1,0 +1,13 @@
+---
+title: "My First Quarto Document"
+format: html
+---
+
+# Hello World!
+
+This is my first Quarto document. My nickname is Nick Tag.
+
+## My Interests
+
+When I'm not working on data analytics, I enjoy spending time outdoors pursuing two of my favorite sports: skiing and golf. I love hitting the slopes during the winter months, whether it's carving down groomed runs or exploring fresh powder in the backcountry. Golf is my go-to activity in the warmer seasons, where I can challenge myself on the course while enjoying the beautiful scenery and spending quality time with friends. Both sports require focus, technique, and continuous improvement - skills that I find translate well to my academic and professional pursuits.
+

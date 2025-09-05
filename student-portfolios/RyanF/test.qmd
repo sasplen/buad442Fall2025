@@ -1,0 +1,14 @@
+---
+title: "My First Quarto Document"
+format: html
+---
+
+
+# Hello World! 👋
+
+This is a test of the Quarto document. My nick name is Ryan F.
+
+## My Passion for MLB Ballparks
+
+One of my greatest passions is traveling to different Major League Baseball ballparks across the country. There's something magical about experiencing the unique atmosphere, architecture, and traditions that each stadium offers. From the historic charm of Fenway Park's Green Monster to the modern marvel of Oracle Park overlooking San Francisco Bay, every ballpark tells its own story. I love discovering the local food specialties, like the famous Dodger Dogs at Dodger Stadium or the crab cakes at Camden Yards. Each visit becomes an adventure where I can immerse myself in the local culture while enjoying America's pastime. Whether it's the retractable roof at Miller Park, the ivy-covered walls of Wrigley Field, or the stunning views from PNC Park, I'm always excited to add another ballpark to my collection and create lasting memories with friends and family.
+
