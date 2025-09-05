@@ -1,0 +1,14 @@
+---
+title: "My first quarto document"
+format: html
+---
+
+# Hello World
+
+This is my first quarto document. My name is Aidan
+
+## My Love for Baseball
+
+I have a deep passion for baseball that has been a significant part of my life. From playing little league as a kid to following the major leagues, baseball has taught me valuable lessons about teamwork, perseverance, and the importance of practice. I love the strategy involved in the game, the excitement of a close match, and the way it brings people together. Whether I'm watching a game, playing catch, or analyzing player statistics, baseball continues to be one of my favorite pastimes and a sport that I'm truly passionate about. 
+
+
