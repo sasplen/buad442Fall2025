@@ -1,0 +1,10 @@
+---
+title: "My First Quarto Document"
+format: html
+---
+# Hello World! ￿
+This is my first Quarto document. My nick name is Ian.
+
+## My Love for Soccer
+
+I have a deep passion for soccer and am a devoted supporter of Manchester City. There's something magical about the beautiful game that captivates me - the tactical brilliance, the moments of individual skill, and the collective spirit of teamwork. Following Manchester City has been an incredible journey, watching them evolve into one of the most exciting teams in world football. From the heart-stopping moments in the Champions League to the dominant performances in the Premier League, being a City fan has brought me countless hours of joy and excitement. The club's commitment to attractive, attacking football under Pep Guardiola's leadership has only deepened my love for the sport and my loyalty to the sky blues.
