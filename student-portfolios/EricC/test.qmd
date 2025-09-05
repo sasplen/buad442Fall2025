@@ -1,0 +1,15 @@
+---
+title: "My First Quarto Document"
+format: html
+---
+
+# Hello World! 👋
+
+This is my first Quarto document. My nick name is Eric C.
+
+::: {.callout-note}
+## My Interest in Neymar Jr.
+
+I have a diverse range of interests that reflect my passion for both creativity and athleticism. My love for soccer, particularly following players like Neymar Jr., combines with my appreciation for acoustic music and singer-songwriters to create a well-rounded perspective on what makes life engaging and meaningful.
+
+:::
