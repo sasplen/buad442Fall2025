@@ -15,9 +15,9 @@
 ## 🖼️ Portfolio Images
 
 
-![My pet](../../IMG_0822.jpg)
+![My pet](IMG_0822.jpg)
 
 ### Cheeseburger
-![Me purchasing my large ceramic cheeseburger](../../IMG_2398.jpg)
+![Me purchasing my large ceramic cheeseburger](IMG_2398.jpg)
 
 
