@@ -1,0 +1,25 @@
+---
+title: "My First Quarto Document"
+format: html
+---
+
+# Hello World! 👋
+
+This is my first Quarto document. My name is Ibrahim W.
+
+::: {.callout-note}
+## AI-Generated Content
+The following section about Moroccan music was created using Cursor AI's built-in AI assistance feature. This demonstrates how AI can help generate meaningful, personalized content for documents.
+:::
+
+## My Love for Moroccan Music
+
+I have a deep appreciation for Moroccan music and its rich cultural heritage. There's something incredibly powerful about the traditional sounds of Morocco that can transport you to the vibrant streets of Marrakech, the coastal cities of Casablanca, or the Atlas Mountains.
+
+One of my absolute favorites is **Gnawa music**. This spiritual music tradition, originating from the Gnawa people, features hypnotic rhythms created with the guembri (a three-stringed bass instrument) and metal castanets called qraqeb. The music is deeply spiritual and often used in healing ceremonies. The repetitive, trance-inducing rhythms have a way of connecting you to something ancient and profound.
+
+The beauty of Moroccan music lies in its diversity and authenticity. From the classical Andalusian music that reflects Morocco's Moorish heritage to the modern fusion of traditional instruments with contemporary sounds, Moroccan music tells the story of a nation that has been a crossroads of cultures for centuries. Artists like Cheb Khaled, Najat Aatabou, and Hassan Hakmoun have brought Moroccan sounds to international audiences.
+
+I love how Moroccan music can transport you to different places and times. The haunting melodies of the oud, the rhythmic beats of the darbuka, and the soulful vocals can evoke memories of family gatherings, traditional celebrations, and the warm hospitality that Morocco is known for. It's the kind of music that makes you want to dance, celebrate, and connect with others on a deeper level.
+
+The fusion of Arabic, Berber, and African influences creates a unique sound that is distinctly Moroccan. Whether it's the energetic rhythms of Chaabi music, the spiritual depth of Sufi music, or the modern interpretations by contemporary artists, Moroccan music continues to evolve while staying true to its cultural roots.

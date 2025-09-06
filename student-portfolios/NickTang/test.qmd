@@ -1,0 +1,19 @@
+---
+title: "test"
+format: html
+editor: visual
+---
+
+# Hello World!
+
+## This is my first Quarto document. My nick name is NickT
+
+## Snowboarding Passion
+
+I absolutely love snowboarding! It's one of my favorite winter activities and I've been doing it for several years now. The feeling of carving down the mountain, the crisp winter air, and the adrenaline rush are what make it so special to me. One of my proudest moments was conquering my first black diamond run — it was both terrifying and exhilarating! The steep terrain, challenging conditions, and technical skills required really pushed me to my limits, but the sense of accomplishment when I made it down was incredible. That experience taught me that with determination and practice, you can overcome even the most daunting challenges.
+
+## Quarto
+
+
+```         
+```
