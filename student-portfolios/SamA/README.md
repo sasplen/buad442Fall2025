@@ -1,4 +1,4 @@
-# 👨‍🎓 Student Portfolio - Adam 🚴
+# 👨‍🎓 Student Portfolio - Sam A
 
 ---
 
@@ -7,15 +7,14 @@
 | **Field** | **Details** |
 |-----------|-------------|
 | **Nickname/Pseudonym** | Sam |
-| **Interesting Fact** | I like to waterski in the summer. |
-| **Interesting Fact2** | I like to spend my freetime outdoors. |
+| **Interesting Fact** | I have a chocolate lab named Chance. |
+| **Interesting Fact2** | I like to spend me ffreetime in the outdoors. |
 
 ---
 
 ## 🖼️ Portfolio Images
 
-### 
-### Personal Photo
-
-
-
+### Hanging out with friends oustide
+![On the boat with friends](Boating.jpg)
+### My dog
+[My dog on the laptop](dog.jpg)
