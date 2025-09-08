@@ -12,6 +12,10 @@
 
 ---
 
+## ⚽ Soccer Interest
+
+Soccer has been a central passion in my life for as long as I can remember. From playing in local youth leagues to competing at higher levels, the beautiful game has taught me valuable lessons about teamwork, perseverance, and strategic thinking. I particularly enjoy the tactical aspects of the sport, analyzing formations and player movements, which has helped develop my analytical mindset. Whether I'm playing on the field, watching professional matches, or discussing tactics with friends, soccer continues to be both a source of joy and a way to stay physically active and mentally sharp.
+
 ## 🖼️ Portfolio Images
 
 ### Soccer
