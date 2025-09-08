@@ -1,11 +1,14 @@
 ---
 title: "My First Quarto Document"
+date: today
 format: html
 ---
-#Hello World! 👋
 
-This is my first quarto document. My nick name is ChrisC.
+# Hello World! 👋
 
-## ⚽ My Passion for Soccer
+This is my first quarto document. My nick name is ChrisC. 
 
-Soccer has been a central passion in my life for as long as I can remember. From playing in local youth leagues to competing at higher levels, the beautiful game has taught me valuable lessons about teamwork, perseverance, and strategic thinking. I particularly enjoy the tactical aspects of the sport, analyzing formations and player movements, which has helped develop my analytical mindset. Whether I'm playing on the field, watching professional matches, or discussing tactics with friends, soccer continues to be both a source of joy and a way to stay physically active and mentally sharp. 
+## My Interest in Soccer ⚽
+
+I have a deep passion for soccer that has been a significant part of my life for many years. Whether I'm playing on the field, watching professional matches, or analyzing game strategies, soccer brings me joy and excitement. I love the teamwork, strategy, and athleticism involved in the sport, and I find it to be a great way to stay active and connect with others who share the same enthusiasm. From local pickup games to following major leagues around the world, soccer continues to be one of my favorite activities and interests.
+    
