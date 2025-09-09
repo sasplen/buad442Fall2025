@@ -32,6 +32,7 @@ This README is automatically generated and updated when changes are made to stud
 | OwenT | Owen | I have a pet beta fish.<br>I own a large ceramic cheeseburger. | [View Portfolio](OwenT/README.md) | <img src="OwenT/IMG_0822.jpg" alt="My pet" title="My pet" width="150"><img src="OwenT/IMG_2398.jpg" alt="Me purchasing my large ceramic cheeseburger" title="Me purchasing my large ceramic cheeseburger" width="150"> |
 | PatrickG | Patrick | I have three siblings<br>I have never broken a bone | [View Portfolio](PatrickG/README.md) | No images |
 | RyanF | Ryan | I have been to 25 out of 30 ballparks.<br>I am ambidextrous. | [View Portfolio](RyanF/README.md) | No images |
+| SamA | Sam | I have a chocolate lab named Chance.<br>I like to spend me ffreetime in the outdoors. | [View Portfolio](SamA/README.md) | No images |
 | SamR | Sam | I have climbed Mt Kilimanjaro<br>I speak Russian | [View Portfolio](SamR/README.md) | <img src="SamR/IMG_00633_resized.jpg" alt="Climbing Mt Kilimanjaro" title="Climbing Mt Kilimanjaro" width="150"><img src="SamR/IMG_2206_resized.jpg" alt="Monkey in Bali" title="Monkey in Bali" width="150"> |
 | SylasC | Sylas | I've gone skydiving!<br>I'm working on becoming a better cook this semeste... | [View Portfolio](SylasC/README.md) | <img src="SylasC/skydiving.jpeg" alt="Skydiving" title="Skydiving" width="150"><img src="SylasC/uluru.jpeg" alt="Hiking" title="Hiking" width="150"> |
 | ValerieI | Valerie | I play 4 instruments.<br>I've been to 12 countries | [View Portfolio](ValerieI/README.md) | <img src="ValerieI/IMG_7304.jpeg" alt="When I performed for The New Magazine" title="When I performed for The New Magazine" width="150"><img src="ValerieI/IMG_8128.jpeg" alt="Me and my cat" title="Me and my cat" width="150"> |
@@ -72,4 +73,4 @@ This README is automatically generated and updated when changes are made to stud
 This README is automatically updated via GitHub Actions whenever any `README.md` file in the student-portfolios folder (or its subfolders) is modified.
 
 ---
-*Last updated: %Y->- (HEAD -> main, origin/main) 712ea8479117fbdd89830ef80a844ac2dd5d23ec:%M:HEAD*
+*Last updated: %Y->- (HEAD -> main, origin/main) 2f047626d02af6c174517e83120f4a71e39d05f4:%M:HEAD*
