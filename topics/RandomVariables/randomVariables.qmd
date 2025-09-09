@@ -1,6 +1,6 @@
 ---
 title: "Random Variables"
-subtitle: "The symbols by which we track what is known and unknown"
+subtitle: "Basic Building Block for Uncertainty Modeling"
 format: 
   revealjs:
     theme: default
@@ -41,46 +41,30 @@ format:
       data-background-position: "center"
       data-background-opacity: "0.3"
     logo: ""
-    # css: styles/custom-dark.css
+    css: |
+      /* Default font color for entire presentation */
+      .reveal {
+        color: #435a7f;
+      }
+
+      /* Headings and titles - coordinating color */
+      .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+        color: #2c3e50 !important;
+        font-weight: bold;
+      }
+
+      .title-slide h1, .title-slide h2, .title-slide p {
+        color: white !important;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        background: rgba(0,0,0,0.3);
+        padding: 10px;
+        border-radius: 5px;
+      }
 execute:
   echo: false
   eval: true
   warning: false
   error: false
----
-
-## Random Variables {.center .title-slide}
-
-### The symbols by which we track what is known and unknown
-
-**BUAD 442 - Interpretable Data Models**  
-**Fall 2025**
-
-<style>
-/* Default font color for entire presentation */
-.reveal {
-  color: #435a7f;
-}
-
-/* Headings and titles - coordinating color */
-.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
-  color: #2c3e50 !important;
-  font-weight: bold;
-}
-
-.title-slide h1, .title-slide h2, .title-slide p {
-  color: white !important;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-  background: rgba(0,0,0,0.3);
-  padding: 10px;
-  border-radius: 5px;
-}
-</style>
-
-::: {.notes}
-Introduce the concept of random variables as the foundation of statistical modeling.
-:::
-
 ---
 
 ## What is a Random Variable? {.center background-color="white" background-image="graphics/sunnyDay.png" background-size="cover" background-position="center" background-opacity="0.3"}
@@ -154,7 +138,7 @@ Show how we convert qualitative outcomes into quantitative measurements for anal
 
 ---
 
-## Mathematical Formalism {.center}
+## Mathematical Formalism {.center background-color="white" background-image="graphics/mathBlackboard.jpg" background-size="cover" background-position="center" background-opacity="0.15"}
 
 ### Random Variable Definition
 
@@ -174,7 +158,7 @@ Introduce the formal mathematical definition and notation for random variables.
 
 ---
 
-## Mathematical Formalism (Continued) {.center}
+## Mathematical Formalism (Continued) {.center background-color="white" background-image="graphics/mathBlackboard.jpg" background-size="cover" background-position="center" background-opacity="0.15"}
 
 ### Key Properties
 
@@ -237,7 +221,7 @@ Show a concrete example of a discrete probability distribution with clear proper
 
 ---
 
-## Continuous Probability Distribution {.center}
+## Continuous Probability Distribution {.center background-color="white" background-image="graphics/sunnyDay.png" background-size="cover" background-position="center" background-opacity="0.15"}
 
 ### Example: Temperature
 
@@ -405,3 +389,531 @@ Show a continuous probability density function for sales revenue with a skewed d
 :::
 
 ---
+
+## Bernoulli Distribution: Table View {.center background-color="white" background-image="graphics/sunnyDay.png" background-size="cover" background-position="center" background-opacity="0.15"}
+
+### Sunny Day Example
+
+<br>
+
+| Outcome | Value | Probability |
+|---------|-------|-------------|
+| Sunny day | 1 | 0.7 |
+| Not sunny day | 0 | 0.3 |
+
+<br>
+
+**Properties:**
+
+- Binary outcomes (0 or 1)
+- Probabilities sum to 1: $0.7 + 0.3 = 1.0$
+- This is a **Bernoulli distribution**
+
+::: {.notes}
+Show the table representation of the Bernoulli distribution for the sunny day example.
+:::
+
+---
+
+## Bernoulli Distribution: Mathematical Definition {.center}
+
+### Academic Paper Style
+
+A random variable $X$ follows a **Bernoulli distribution** with parameter $p$ if:
+
+$$X \sim \text{Bernoulli}(p)$$
+
+where:
+
+- $P(X = 1) = p$ (probability of "success")
+- $P(X = 0) = 1-p$ (probability of "failure")
+
+::: {.notes}
+Present the formal mathematical definition of the Bernoulli distribution as it would appear in academic literature.
+:::
+
+---
+
+### Academic Paper Style
+$$X \sim \text{Bernoulli}(p)$$
+
+where:
+
+- $P(X = 1) = p$ (probability of "success")
+- $P(X = 0) = 1-p$ (probability of "failure")
+
+**For our sunny day example:**
+
+- $X \sim \text{Bernoulli}(0.7)$
+- $P(X = 1) = 0.7$ (sunny day)
+- $P(X = 0) = 0.3$ (not sunny day)
+
+
+---
+
+## Bernoulli Distribution: Graph View {.center}
+
+```{python}
+#| fig-width: 8
+#| fig-height: 5
+#| fig-dpi: 150
+
+# Bernoulli distribution for sunny day
+outcomes = ['Not Sunny (0)', 'Sunny (1)']
+probabilities = [0.3, 0.7]
+colors = ['cadetblue', 'aliceblue']
+
+plt.figure(figsize=(8, 5))
+bars = plt.bar(outcomes, probabilities, color=colors, edgecolor='navy', linewidth=2)
+plt.title('Bernoulli Distribution: Sunny Day', fontsize=20, fontweight='bold', color='#2c3e50')
+plt.ylabel('Probability', fontsize=16, fontweight='bold')
+plt.xlabel('Outcome', fontsize=16, fontweight='bold')
+plt.ylim(0, 0.8)
+plt.xticks(fontsize=14)
+plt.yticks(fontsize=14)
+
+# Add probability values on bars
+for bar, prob in zip(bars, probabilities):
+    plt.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.02, 
+             f'{prob:.1f}', ha='center', va='bottom', fontsize=16, fontweight='bold')
+
+plt.tight_layout()
+plt.show()
+```
+
+::: {.notes}
+Show the graphical representation of the Bernoulli distribution for the sunny day example.
+:::
+
+---
+
+## Bernoulli Distribution: Node View {.center}
+
+$$X \sim \text{Bernoulli}(0.7)$$
+
+```{dot}
+// | label: fig-bernoulli
+// | fig-cap: Bernoulli random variable as a node.
+// | fig-width: 7
+
+digraph G {
+  A [label="Sunny Day\nX", texlbl="$\\frac{\\gamma}{x^2}$", shape=ellipse, style=filled, fillcolor=aliceblue]
+}
+```
+
+::: {.notes}
+Show the random variable as a conceptual node, connecting back to our original informal definition.
+:::
+
+---
+
+## Joint Distributions {.center}
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+```{dot}
+// | label: fig-joint-preview
+// | fig-cap: Preview of how random variables relate to each other.
+// | fig-width: 3
+
+digraph G {
+  A [label="Sunny Day\nX", shape=ellipse, style=filled, fillcolor=aliceblue]
+  B [label="Ice Cream Sales\nY", shape=ellipse, style=filled, fillcolor=aliceblue]
+  A -> B [label="influences", color=navy]
+}
+```
+
+:::
+
+::: {.column width="50%"}
+
+**Joint Distribution:**
+
+$$P(X = x, Y = y)$$
+
+**Example:**
+
+$$P(X = 0, Y = \text{low}) = 0.25$$
+$$P(X = 0, Y = \text{high}) = 0.05$$
+
+**Key Insight:** We model **both** variables together to capture their relationship.
+
+:::
+
+:::
+
+::: {.notes}
+Preview how random variables can be connected and influence each other, setting up the next topic on joint distributions.
+:::
+
+---
+
+## Further Learning {.center}
+
+### Let's Practice Together!
+
+::: {.callout-tip}
+## 📊 Interactive Practice
+
+Ready to test your understanding of random variables?
+
+<a href="https://embed.polleverywhere.com/free_text_polls/OMKIRvvG07cgcdmOGXkz1?controls=none&short_poll=true" target="_blank" class="results-button">
+  🎯 **Join Poll** - Random Variables Practice
+</a>
+
+*We'll work through examples together in real-time*
+:::
+
+::: {.notes}
+Transition to interactive learning with Poll Everywhere for hands-on practice with random variables.
+:::
+
+---
+
+# Appendix {.center}
+
+## Causal Relationships: Two Different Stories {.center}
+
+::: {.columns}
+
+::: {.column width="35%"}
+
+### Story 1: Direct Causation
+
+```{dot}
+// | label: fig-direct-causation
+// | fig-cap: Smoking directly causes lung cancer.
+// | fig-width: 3
+
+digraph G {
+  S [label="Smoking", shape=ellipse, style=filled, fillcolor=cadetblue]
+  L [label="Lung Cancer", shape=ellipse, style=filled, fillcolor=cadetblue]
+  S -> L [label="causes", color=navy, fontsize=12]
+}
+```
+
+**Interpretation:** Smoking directly causes lung cancer.
+
+:::
+
+::: {.column width="65%"}
+
+### Story 2: Common Cause For Smoking and Lung Cancer
+
+```{dot}
+// | label: fig-common-cause
+// | fig-cap: Genetics influences both smoking and lung cancer.
+// | fig-width: 5
+
+digraph G {
+  G [label="Genetics", shape=ellipse, style=filled, fillcolor=aliceblue]
+  S [label="Smoking", shape=ellipse, style=filled, fillcolor=cadetblue]
+  L [label="Lung Cancer", shape=ellipse, style=filled, fillcolor=cadetblue]
+  G -> S [label="influences", color=navy, fontsize=12]
+  G -> L [label="influences", color=navy, fontsize=12]
+}
+```
+
+**Interpretation:** Genetics influences both smoking behavior and lung cancer risk.
+
+:::
+
+:::
+
+::: {.notes}
+Show two different causal stories using DAGs to illustrate how the same observed correlation can have different underlying causal explanations.
+:::
+
+---
+
+## Key Insight: Correlation ≠ Causation {.center}
+
+### The Same Data, Different Stories
+
+Both DAGs can explain the same observed correlation between smoking and lung cancer, but they have very different implications:
+
+**Story 1 (Direct Causation):**
+- Stop smoking → Reduce lung cancer risk
+- Intervention on smoking directly affects outcome
+
+**Story 2 (Common Cause):**
+- Stop smoking → May not reduce lung cancer risk
+- The genetic predisposition remains unchanged
+
+::: {.callout-important}
+## 🎯 Critical Thinking
+
+Understanding the underlying causal structure is essential for making effective interventions and policy decisions.
+:::
+
+::: {.notes}
+Emphasize the importance of understanding causal relationships rather than just correlations for making informed decisions.
+:::
+
+---
+
+## Appendix: Probability Distributions {.center}
+
+### Discrete Uniform Distribution (0,2)
+
+```{python}
+#| fig-width: 8
+#| fig-height: 5
+#| fig-dpi: 150
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Discrete uniform distribution (0,1,2)
+x_values = [0, 1, 2]
+probabilities = [1/3, 1/3, 1/3]
+colors = ['aliceblue', 'cadetblue', '#9370db']
+
+plt.figure(figsize=(8, 5))
+bars = plt.bar(x_values, probabilities, color=colors, edgecolor='navy', linewidth=2)
+plt.title('Discrete Uniform Distribution: X ~ Uniform(0,2)', fontsize=20, fontweight='bold', color='#2c3e50')
+plt.ylabel('Probability', fontsize=16, fontweight='bold')
+plt.xlabel('Value', fontsize=16, fontweight='bold')
+plt.ylim(0, 0.4)
+plt.xticks(x_values, fontsize=14)
+plt.yticks(fontsize=14)
+
+# Add probability labels on bars
+for bar, prob in zip(bars, probabilities):
+    plt.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.01, 
+             f'{prob:.3f}', ha='center', va='bottom', fontsize=14, fontweight='bold')
+
+plt.tight_layout()
+plt.show()
+```
+
+::: {.notes}
+Show the probability mass function for a discrete uniform distribution with equal probabilities for each outcome.
+:::
+
+---
+
+## Continuous Uniform Distribution (0,2) {.center}
+
+```{python}
+#| fig-width: 8
+#| fig-height: 5
+#| fig-dpi: 150
+
+# Continuous uniform distribution from 0 to 2
+x = np.linspace(-0.5, 2.5, 1000)
+pdf = np.where((x >= 0) & (x <= 2), 0.5, 0)
+
+plt.figure(figsize=(8, 5))
+plt.plot(x, pdf, color='cadetblue', linewidth=3, label='PDF')
+plt.fill_between(x, pdf, alpha=0.3, color='aliceblue')
+plt.title('Continuous Uniform Distribution: X ~ Uniform(0,2)', fontsize=20, fontweight='bold', color='#2c3e50')
+plt.ylabel('Probability Density', fontsize=16, fontweight='bold')
+plt.xlabel('Value', fontsize=16, fontweight='bold')
+plt.xticks(fontsize=14)
+plt.yticks(fontsize=14)
+plt.grid(True, alpha=0.3)
+plt.ylim(0, 0.6)
+
+# Add horizontal line at height 0.5
+plt.axhline(y=0.5, color='#9370db', linestyle='--', linewidth=2, alpha=0.7, label='Height = 0.5')
+plt.legend(fontsize=14)
+
+plt.tight_layout()
+plt.show()
+```
+
+::: {.notes}
+Show the probability density function for a continuous uniform distribution with constant height over the interval.
+:::
+
+---
+
+## Continuous Uniform: Shaded Area P(0 ≤ X ≤ 1) {.center}
+
+```{python}
+#| fig-width: 8
+#| fig-height: 5
+#| fig-dpi: 150
+
+# Continuous uniform distribution from 0 to 2
+x = np.linspace(-0.5, 2.5, 1000)
+pdf = np.where((x >= 0) & (x <= 2), 0.5, 0)
+
+# Shaded area from 0 to 1
+x_shade = np.linspace(0, 1, 100)
+pdf_shade = np.full_like(x_shade, 0.5)
+
+plt.figure(figsize=(8, 5))
+plt.plot(x, pdf, color='cadetblue', linewidth=3, label='PDF')
+plt.fill_between(x, pdf, alpha=0.2, color='aliceblue', label='Total area')
+plt.fill_between(x_shade, pdf_shade, alpha=0.6, color='#9370db', label='P(0 ≤ X ≤ 1)')
+
+plt.title('Continuous Uniform: P(0 ≤ X ≤ 1) = 0.5', fontsize=20, fontweight='bold', color='#2c3e50')
+plt.ylabel('Probability Density', fontsize=16, fontweight='bold')
+plt.xlabel('Value', fontsize=16, fontweight='bold')
+plt.xticks(fontsize=14)
+plt.yticks(fontsize=14)
+plt.grid(True, alpha=0.3)
+plt.ylim(0, 0.6)
+plt.legend(fontsize=14)
+
+plt.tight_layout()
+plt.show()
+```
+
+::: {.notes}
+Show the continuous uniform distribution with a highlighted area representing P(0 ≤ X ≤ 1) = 0.5.
+:::
+
+---
+
+## Beta Distribution: f(x) = 6x(1-x) {.center}
+
+```{python}
+#| fig-width: 8
+#| fig-height: 5
+#| fig-dpi: 150
+
+# Beta distribution with PDF 6x(1-x) (Beta(2,2))
+x = np.linspace(0, 1, 1000)
+pdf = 6 * x * (1 - x)
+
+plt.figure(figsize=(8, 5))
+plt.plot(x, pdf, color='cadetblue', linewidth=3, label='PDF: f(x) = 6x(1-x)')
+plt.fill_between(x, pdf, alpha=0.3, color='aliceblue')
+
+plt.title('Beta Distribution: f(x) = 6x(1-x)', fontsize=20, fontweight='bold', color='#2c3e50')
+plt.ylabel('Probability Density', fontsize=16, fontweight='bold')
+plt.xlabel('Value', fontsize=16, fontweight='bold')
+plt.xticks(fontsize=14)
+plt.yticks(fontsize=14)
+plt.grid(True, alpha=0.3)
+plt.xlim(0, 1)
+plt.ylim(0, 1.6)
+
+# Add maximum point
+max_x = 0.5
+max_y = 1.5
+plt.plot(max_x, max_y, 'o', color='#9370db', markersize=8, label=f'Max at x = {max_x}')
+plt.legend(fontsize=14)
+
+plt.tight_layout()
+plt.show()
+```
+
+::: {.notes}
+Show the Beta distribution with PDF 6x(1-x), which is symmetric and peaks at x = 0.5.
+:::
+
+---
+
+## Beta Distribution: Shaded Area P(1.25 ≤ X ≤ 2) {.center}
+
+```{python}
+#| fig-width: 8
+#| fig-height: 5
+#| fig-dpi: 150
+
+# Beta distribution with PDF 6x(1-x) (Beta(2,2))
+x = np.linspace(0, 1, 1000)
+pdf = 6 * x * (1 - x)
+
+# Shaded area from 1.25 to 2 (but this is outside [0,1], so probability is 0)
+x_shade = np.linspace(1.25, 2, 100)
+pdf_shade = np.zeros_like(x_shade)
+
+plt.figure(figsize=(8, 5))
+plt.plot(x, pdf, color='cadetblue', linewidth=3, label='PDF: f(x) = 6x(1-x)')
+plt.fill_between(x, pdf, alpha=0.2, color='aliceblue', label='Total area')
+plt.fill_between(x_shade, pdf_shade, alpha=0.6, color='#9370db', label='P(1.25 ≤ X ≤ 2) = 0')
+
+plt.title('Beta Distribution: P(1.25 ≤ X ≤ 2) = 0', fontsize=20, fontweight='bold', color='#2c3e50')
+plt.ylabel('Probability Density', fontsize=16, fontweight='bold')
+plt.xlabel('Value', fontsize=16, fontweight='bold')
+plt.xticks(fontsize=14)
+plt.yticks(fontsize=14)
+plt.grid(True, alpha=0.3)
+plt.xlim(0, 2.2)
+plt.ylim(0, 1.6)
+plt.legend(fontsize=14)
+
+plt.tight_layout()
+plt.show()
+```
+
+::: {.notes}
+Show the Beta distribution with a shaded area outside the support [0,1], demonstrating that P(1.25 ≤ X ≤ 2) = 0.
+:::
+
+---
+
+## Binomial Distribution: n=35, p=0.95 {.center}
+
+```{python}
+#| fig-width: 8
+#| fig-height: 5
+#| fig-dpi: 150
+
+import math
+
+# Binomial distribution with n=35, p=0.95
+n, p = 35, 0.95
+x_values = np.arange(25, n+1)
+
+# Calculate binomial probabilities manually
+def binomial_pmf(k, n, p):
+    """Calculate binomial probability mass function"""
+    if k < 0 or k > n:
+        return 0
+    # Use logarithms to avoid overflow with large factorials
+    log_prob = math.lgamma(n + 1) - math.lgamma(k + 1) - math.lgamma(n - k + 1)
+    log_prob += k * math.log(p) + (n - k) * math.log(1 - p)
+    return math.exp(log_prob)
+
+probabilities = [binomial_pmf(k, n, p) for k in x_values]
+
+# Find the most likely values (around the mean)
+mean_val = n * p
+most_likely = x_values[np.argmax(probabilities)]
+
+# Color scheme: alternate between our favorite colors
+colors = []
+for i, x in enumerate(x_values):
+    if i % 3 == 0:
+        colors.append('aliceblue')
+    elif i % 3 == 1:
+        colors.append('cadetblue')
+    else:
+        colors.append('#9370db')
+
+plt.figure(figsize=(8, 5))
+bars = plt.bar(x_values, probabilities, color=colors, edgecolor='navy', linewidth=0.5, alpha=0.8)
+
+plt.title('People Attending Class: X ~ Binomial(35, 0.95)', fontsize=20, fontweight='bold', color='#2c3e50')
+plt.ylabel('Probability', fontsize=16, fontweight='bold')
+plt.xlabel('Number of Successes', fontsize=16, fontweight='bold')
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=14)
+plt.grid(True, alpha=0.3)
+
+# Add labels on the most significant probability masses
+for i, (bar, prob) in enumerate(zip(bars, probabilities)):
+    if prob > 0.01:  # Only label significant probabilities
+        plt.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.001, 
+                 f'{prob:.3f}', ha='center', va='bottom', fontsize=10, fontweight='bold')
+
+# Add mean line
+plt.axvline(mean_val, color='red', linestyle='--', linewidth=2, alpha=0.7, label=f'Mean = {mean_val:.1f}')
+plt.legend(fontsize=14)
+
+plt.tight_layout()
+plt.show()
+```
+
+::: {.notes}
+Show the binomial distribution with n=35 and p=0.95, which is highly skewed toward the maximum value with probability labels on significant mass points.
+:::
+

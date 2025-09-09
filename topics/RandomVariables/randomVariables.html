@@ -29,6 +29,24 @@
     }
   </style>
   <link rel="stylesheet" href="randomVariables_files/libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
+  <link rel="stylesheet" href="/* Default font color for entire presentation */
+.reveal {
+  color: #435a7f;
+}
+
+/* Headings and titles - coordinating color */
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+  color: #2c3e50 !important;
+  font-weight: bold;
+}
+
+.title-slide h1, .title-slide h2, .title-slide p {
+  color: white !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.3);
+  padding: 10px;
+  border-radius: 5px;
+}">
   <link href="randomVariables_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="randomVariables_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="randomVariables_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -127,50 +145,11 @@
 
 <section id="title-slide" data-background-image="graphics/udairy.jpeg" data-background-opacity="0.3" data-background-position="center" data-background-size="cover" class="quarto-title-block center">
   <h1 class="title">Random Variables</h1>
-  <p class="subtitle">The symbols by which we track what is known and unknown</p>
+  <p class="subtitle">Basic Building Block for Uncertainty Modeling</p>
 
 <div class="quarto-title-authors">
 </div>
 
-</section>
-<section id="random-variables" class="slide level2 center title-slide">
-<h2>Random Variables</h2>
-<h3 id="the-symbols-by-which-we-track-what-is-known-and-unknown">The symbols by which we track what is known and unknown</h3>
-<p><strong>BUAD 442 - Interpretable Data Models</strong><br>
-<strong>Fall 2025</strong></p>
-<style>
-/* Default font color for entire presentation */
-.reveal {
-  color: #435a7f;
-}
-
-/* Headings and titles - coordinating color */
-.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
-  color: #2c3e50 !important;
-  font-weight: bold;
-}
-
-.title-slide h1, .title-slide h2, .title-slide p {
-  color: white !important;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-  background: rgba(0,0,0,0.3);
-  padding: 10px;
-  border-radius: 5px;
-}
-</style>
-<aside class="notes">
-<p>Introduce the concept of random variables as the foundation of statistical modeling.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
 <section id="what-is-a-random-variable" class="slide level2 center" data-background-color="white" data-background-image="graphics/sunnyDay.png" data-background-size="cover" data-background-position="center" data-background-opacity="0.3">
 <h2>What is a Random Variable?</h2>
@@ -314,7 +293,7 @@ Figure&nbsp;2: Example random variables (informally).
           display:block!important;
       }</style></aside>
 </section>
-<section id="mathematical-formalism" class="slide level2 center">
+<section id="mathematical-formalism" class="slide level2 center" data-background-color="white" data-background-image="graphics/mathBlackboard.jpg" data-background-size="cover" data-background-position="center" data-background-opacity="0.15">
 <h2>Mathematical Formalism</h2>
 <h3 id="random-variable-definition">Random Variable Definition</h3>
 <p>A <strong>random variable</strong> <span class="math inline">\(X\)</span> is a function that maps the sample space <span class="math inline">\(\Omega\)</span> to the real numbers:</p>
@@ -339,7 +318,7 @@ Figure&nbsp;2: Example random variables (informally).
           display:block!important;
       }</style></aside>
 </section>
-<section id="mathematical-formalism-continued" class="slide level2 center">
+<section id="mathematical-formalism-continued" class="slide level2 center" data-background-color="white" data-background-image="graphics/mathBlackboard.jpg" data-background-size="cover" data-background-position="center" data-background-opacity="0.15">
 <h2>Mathematical Formalism (Continued)</h2>
 <h3 id="key-properties">Key Properties</h3>
 <p>A <strong>random variable</strong> <span class="math inline">\(X\)</span> is a function that maps the sample space <span class="math inline">\(\Omega\)</span> to the real numbers:</p>
@@ -367,7 +346,7 @@ Figure&nbsp;2: Example random variables (informally).
 <section id="probability-distributions" class="slide level2 center">
 <h2>Probability Distributions</h2>
 <h3 id="spreading-plausibility-over-outcomes">Spreading Plausibility Over Outcomes</h3>
-<p><strong>Key Insight:</strong> Random variables don’t just map outcomes to numbers—we also need to assign <strong>probabilities</strong> to each outcome.</p>
+<p><strong>Key Insight:</strong> Random variables are most useful when we assign <strong>probabilities</strong> to each outcome.</p>
 <p><strong>Example - Weather Random Variable:</strong></p>
 <ul>
 <li><span class="math inline">\(X(\text{sunny}) = 1\)</span> with probability <span class="math inline">\(P(X = 1) = 0.7\)</span></li>
@@ -391,6 +370,7 @@ Figure&nbsp;2: Example random variables (informally).
 <section id="discrete-probability-distribution" class="slide level2 center">
 <h2>Discrete Probability Distribution</h2>
 <h3 id="example-ice-cream-sales">Example: Ice Cream Sales</h3>
+<p><br></p>
 <table class="caption-top">
 <thead>
 <tr class="header">
@@ -412,7 +392,12 @@ Figure&nbsp;2: Example random variables (informally).
 </tr>
 </tbody>
 </table>
-<p><strong>Properties:</strong> - Each probability ≥ 0 - Probabilities sum to 1: <span class="math inline">\(0.6 + 0.4 = 1.0\)</span></p>
+<p><br></p>
+<p><strong>Properties:</strong></p>
+<ul>
+<li>Each probability ≥ 0</li>
+<li>Probabilities sum to 1: <span class="math inline">\(0.6 + 0.4 = 1.0\)</span></li>
+</ul>
 <aside class="notes">
 <p>Show a concrete example of a discrete probability distribution with clear properties.</p>
 <style type="text/css">
@@ -427,7 +412,7 @@ Figure&nbsp;2: Example random variables (informally).
           display:block!important;
       }</style></aside>
 </section>
-<section id="continuous-probability-distribution" class="slide level2 center">
+<section id="continuous-probability-distribution" class="slide level2 center" data-background-color="white" data-background-image="graphics/sunnyDay.png" data-background-size="cover" data-background-position="center" data-background-opacity="0.15">
 <h2>Continuous Probability Distribution</h2>
 <h3 id="example-temperature">Example: Temperature</h3>
 <p>For continuous random variables, we use <strong>probability density functions (PDFs)</strong> to show how we allocate plausibility:</p>
@@ -453,7 +438,7 @@ Figure&nbsp;2: Example random variables (informally).
 </section>
 <section id="discrete-example-coin-flips" class="slide level2 center">
 <h2>Discrete Example: Coin Flips</h2>
-<div id="b48d08bc" class="cell" data-fig-dpi="150" data-fig-height="5" data-fig-width="8" data-execution_count="1">
+<div id="fd1eafc0" class="cell" data-fig-dpi="150" data-fig-height="5" data-fig-width="8" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -478,7 +463,7 @@ Figure&nbsp;2: Example random variables (informally).
 </section>
 <section id="discrete-example-customer-count" class="slide level2 center">
 <h2>Discrete Example: Customer Count</h2>
-<div id="9e18ccbc" class="cell" data-fig-dpi="150" data-fig-height="5" data-fig-width="8" data-execution_count="2">
+<div id="f7096c9a" class="cell" data-fig-dpi="150" data-fig-height="5" data-fig-width="8" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -503,7 +488,7 @@ Figure&nbsp;2: Example random variables (informally).
 </section>
 <section id="continuous-example-temperature" class="slide level2 center">
 <h2>Continuous Example: Temperature</h2>
-<div id="42143b07" class="cell" data-fig-dpi="150" data-fig-height="5" data-fig-width="8" data-execution_count="3">
+<div id="b215d843" class="cell" data-fig-dpi="150" data-fig-height="5" data-fig-width="8" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -528,7 +513,7 @@ Figure&nbsp;2: Example random variables (informally).
 </section>
 <section id="continuous-example-sales-revenue" class="slide level2 center">
 <h2>Continuous Example: Sales Revenue</h2>
-<div id="259e5edf" class="cell" data-fig-dpi="150" data-fig-height="5" data-fig-width="8" data-execution_count="4">
+<div id="e83715c6" class="cell" data-fig-dpi="150" data-fig-height="5" data-fig-width="8" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -551,10 +536,571 @@ Figure&nbsp;2: Example random variables (informally).
           display:block!important;
       }</style></aside>
 </section>
+<section id="bernoulli-distribution-table-view" class="slide level2 center" data-background-color="white" data-background-image="graphics/sunnyDay.png" data-background-size="cover" data-background-position="center" data-background-opacity="0.15">
+<h2>Bernoulli Distribution: Table View</h2>
+<h3 id="sunny-day-example">Sunny Day Example</h3>
+<p><br></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Outcome</th>
+<th>Value</th>
+<th>Probability</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sunny day</td>
+<td>1</td>
+<td>0.7</td>
+</tr>
+<tr class="even">
+<td>Not sunny day</td>
+<td>0</td>
+<td>0.3</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><strong>Properties:</strong></p>
+<ul>
+<li>Binary outcomes (0 or 1)</li>
+<li>Probabilities sum to 1: <span class="math inline">\(0.7 + 0.3 = 1.0\)</span></li>
+<li>This is a <strong>Bernoulli distribution</strong></li>
+</ul>
+<aside class="notes">
+<p>Show the table representation of the Bernoulli distribution for the sunny day example.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="bernoulli-distribution-mathematical-definition" class="slide level2 center">
+<h2>Bernoulli Distribution: Mathematical Definition</h2>
+<h3 id="academic-paper-style">Academic Paper Style</h3>
+<p>A random variable <span class="math inline">\(X\)</span> follows a <strong>Bernoulli distribution</strong> with parameter <span class="math inline">\(p\)</span> if:</p>
+<p><span class="math display">\[X \sim \text{Bernoulli}(p)\]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(P(X = 1) = p\)</span> (probability of “success”)</li>
+<li><span class="math inline">\(P(X = 0) = 1-p\)</span> (probability of “failure”)</li>
+</ul>
+<aside class="notes">
+<p>Present the formal mathematical definition of the Bernoulli distribution as it would appear in academic literature.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section class="slide level2 center">
 
+<h3 id="academic-paper-style-1">Academic Paper Style</h3>
+<p><span class="math display">\[X \sim \text{Bernoulli}(p)\]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(P(X = 1) = p\)</span> (probability of “success”)</li>
+<li><span class="math inline">\(P(X = 0) = 1-p\)</span> (probability of “failure”)</li>
+</ul>
+<p><strong>For our sunny day example:</strong></p>
+<ul>
+<li><span class="math inline">\(X \sim \text{Bernoulli}(0.7)\)</span></li>
+<li><span class="math inline">\(P(X = 1) = 0.7\)</span> (sunny day)</li>
+<li><span class="math inline">\(P(X = 0) = 0.3\)</span> (not sunny day)</li>
+</ul>
+</section>
+<section id="bernoulli-distribution-graph-view" class="slide level2 center">
+<h2>Bernoulli Distribution: Graph View</h2>
+<div id="f94961bb" class="cell" data-fig-dpi="150" data-fig-height="5" data-fig-width="8" data-execution_count="5">
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="randomVariables_files/figure-revealjs/cell-6-output-1.png" width="760" height="471"></p>
+</figure>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Show the graphical representation of the Bernoulli distribution for the sunny day example.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="bernoulli-distribution-node-view" class="slide level2 center">
+<h2>Bernoulli Distribution: Node View</h2>
+<p><span class="math display">\[X \sim \text{Bernoulli}(0.7)\]</span></p>
+<div class="cell" data-fig-width="7" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-bernoulli" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-bernoulli-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<svg width="672" height="480" viewbox="0.00 0.00 119.17 66.83" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 62.83)">
+<title>G</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-62.83 115.17,-62.83 115.17,4 -4,4"></polygon>
+<!-- A -->
+<g id="node1" class="node">
+<title>A</title>
+<ellipse fill="aliceblue" stroke="black" cx="55.59" cy="-29.42" rx="55.67" ry="29.33"></ellipse>
+<text text-anchor="middle" x="55.59" y="-33.62" font-family="Times,serif" font-size="14.00">Sunny Day</text>
+<text text-anchor="middle" x="55.59" y="-16.82" font-family="Times,serif" font-size="14.00">X</text>
+</g>
+</g>
+</svg>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bernoulli-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Bernoulli random variable as a node.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Show the random variable as a conceptual node, connecting back to our original informal definition.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="joint-distributions" class="slide level2 center">
+<h2>Joint Distributions</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell" data-fig-width="3" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-joint-preview" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-joint-preview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<svg width="288" height="480" viewbox="0.00 0.00 159.26 178.46" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 174.46)">
+<title>G</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-174.46 155.26,-174.46 155.26,4 -4,4"></polygon>
+<!-- A -->
+<g id="node1" class="node">
+<title>A</title>
+<ellipse fill="aliceblue" stroke="black" cx="75.63" cy="-141.05" rx="55.67" ry="29.33"></ellipse>
+<text text-anchor="middle" x="75.63" y="-145.25" font-family="Times,serif" font-size="14.00">Sunny Day</text>
+<text text-anchor="middle" x="75.63" y="-128.45" font-family="Times,serif" font-size="14.00">X</text>
+</g>
+<!-- B -->
+<g id="node2" class="node">
+<title>B</title>
+<ellipse fill="aliceblue" stroke="black" cx="75.63" cy="-29.42" rx="75.76" ry="29.33"></ellipse>
+<text text-anchor="middle" x="75.63" y="-33.62" font-family="Times,serif" font-size="14.00">Ice Cream Sales</text>
+<text text-anchor="middle" x="75.63" y="-16.82" font-family="Times,serif" font-size="14.00">Y</text>
+</g>
+<!-- A&#45;&gt;B -->
+<g id="edge1" class="edge">
+<title>A-&gt;B</title>
+<path fill="none" stroke="navy" d="M75.63,-111.53C75.63,-98.69 75.63,-83.32 75.63,-69.44"></path>
+<polygon fill="navy" stroke="navy" points="79.13,-69.17 75.63,-59.17 72.13,-69.17 79.13,-69.17"></polygon>
+<text text-anchor="middle" x="104.4" y="-81.03" font-family="Times,serif" font-size="14.00">influences</text>
+</g>
+</g>
+</svg>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-joint-preview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Preview of how random variables relate to each other.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<p><strong>Joint Distribution:</strong></p>
+<p><span class="math display">\[P(X = x, Y = y)\]</span></p>
+<p><strong>Example:</strong></p>
+<p><span class="math display">\[P(X = 0, Y = \text{low}) = 0.25\]</span> <span class="math display">\[P(X = 0, Y = \text{high}) = 0.05\]</span></p>
+<p><strong>Key Insight:</strong> We model <strong>both</strong> variables together to capture their relationship.</p>
+</div></div>
+<aside class="notes">
+<p>Preview how random variables can be connected and influence each other, setting up the next topic on joint distributions.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="further-learning" class="slide level2 center">
+<h2>Further Learning</h2>
+<h3 id="lets-practice-together">Let’s Practice Together!</h3>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>📊 Interactive Practice</strong></p>
+</div>
+<div class="callout-content">
+<p>Ready to test your understanding of random variables?</p>
+<p><a href="https://embed.polleverywhere.com/free_text_polls/OMKIRvvG07cgcdmOGXkz1?controls=none&amp;short_poll=true" target="_blank" class="results-button"> 🎯 <strong>Join Poll</strong> - Random Variables Practice </a></p>
+<p><em>We’ll work through examples together in real-time</em></p>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Transition to interactive learning with Poll Everywhere for hands-on practice with random variables.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section class="slide level2 center">
 
 </section>
+<section>
+<section id="appendix" class="title-slide slide level1 center">
+<h1>Appendix</h1>
+
+</section>
+<section id="causal-relationships-two-different-stories" class="slide level2 center">
+<h2>Causal Relationships: Two Different Stories</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<h3 id="story-1-direct-causation">Story 1: Direct Causation</h3>
+<div class="cell" data-fig-width="3" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-direct-causation" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-direct-causation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<svg width="288" height="480" viewbox="0.00 0.00 130.36 130.40" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 126.4)">
+<title>G</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-126.4 126.36,-126.4 126.36,4 -4,4"></polygon>
+<!-- S -->
+<g id="node1" class="node">
+<title>S</title>
+<ellipse fill="cadetblue" stroke="black" cx="61.18" cy="-104.4" rx="45.83" ry="18"></ellipse>
+<text text-anchor="middle" x="61.18" y="-100.2" font-family="Times,serif" font-size="14.00">Smoking</text>
+</g>
+<!-- L -->
+<g id="node2" class="node">
+<title>L</title>
+<ellipse fill="cadetblue" stroke="black" cx="61.18" cy="-18" rx="61.36" ry="18"></ellipse>
+<text text-anchor="middle" x="61.18" y="-13.8" font-family="Times,serif" font-size="14.00">Lung Cancer</text>
+</g>
+<!-- S&#45;&gt;L -->
+<g id="edge1" class="edge">
+<title>S-&gt;L</title>
+<path fill="none" stroke="navy" d="M61.18,-86.32C61.18,-74.88 61.18,-59.57 61.18,-46.44"></path>
+<polygon fill="navy" stroke="navy" points="64.68,-46.05 61.18,-36.05 57.68,-46.05 64.68,-46.05"></polygon>
+<text text-anchor="middle" x="76.84" y="-57.6" font-family="Times,serif" font-size="12.00">causes</text>
+</g>
+</g>
+</svg>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-direct-causation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Smoking directly causes lung cancer.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Interpretation:</strong> Smoking directly causes lung cancer.</p>
+</div><div class="column" style="width:65%;">
+<h3 id="story-2-common-cause-for-smoking-and-lung-cancer">Story 2: Common Cause For Smoking and Lung Cancer</h3>
+<div class="cell" data-fig-width="5" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-common-cause" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-common-cause-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<svg width="480" height="480" viewbox="0.00 0.00 240.09 130.40" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 126.4)">
+<title>G</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-126.4 236.09,-126.4 236.09,4 -4,4"></polygon>
+<!-- G -->
+<g id="node1" class="node">
+<title>G</title>
+<ellipse fill="aliceblue" stroke="black" cx="107.92" cy="-104.4" rx="44.64" ry="18"></ellipse>
+<text text-anchor="middle" x="107.92" y="-100.2" font-family="Times,serif" font-size="14.00">Genetics</text>
+</g>
+<!-- S -->
+<g id="node2" class="node">
+<title>S</title>
+<ellipse fill="cadetblue" stroke="black" cx="45.92" cy="-18" rx="45.83" ry="18"></ellipse>
+<text text-anchor="middle" x="45.92" y="-13.8" font-family="Times,serif" font-size="14.00">Smoking</text>
+</g>
+<!-- G&#45;&gt;S -->
+<g id="edge1" class="edge">
+<title>G-&gt;S</title>
+<path fill="none" stroke="navy" d="M95.67,-86.73C86.67,-74.47 74.29,-57.62 64.13,-43.79"></path>
+<polygon fill="navy" stroke="navy" points="66.88,-41.63 58.14,-35.64 61.24,-45.77 66.88,-41.63"></polygon>
+<text text-anchor="middle" x="105.57" y="-57.6" font-family="Times,serif" font-size="12.00">influences</text>
+</g>
+<!-- L -->
+<g id="node3" class="node">
+<title>L</title>
+<ellipse fill="cadetblue" stroke="black" cx="170.92" cy="-18" rx="61.36" ry="18"></ellipse>
+<text text-anchor="middle" x="170.92" y="-13.8" font-family="Times,serif" font-size="14.00">Lung Cancer</text>
+</g>
+<!-- G&#45;&gt;L -->
+<g id="edge2" class="edge">
+<title>G-&gt;L</title>
+<path fill="none" stroke="navy" d="M120.36,-86.73C129.51,-74.47 142.09,-57.62 152.41,-43.79"></path>
+<polygon fill="navy" stroke="navy" points="155.32,-45.75 158.49,-35.64 149.71,-41.56 155.32,-45.75"></polygon>
+<text text-anchor="middle" x="167.57" y="-57.6" font-family="Times,serif" font-size="12.00">influences</text>
+</g>
+</g>
+</svg>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-common-cause-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Genetics influences both smoking and lung cancer.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Interpretation:</strong> Genetics influences both smoking behavior and lung cancer risk.</p>
+</div></div>
+<aside class="notes">
+<p>Show two different causal stories using DAGs to illustrate how the same observed correlation can have different underlying causal explanations.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="key-insight-correlation-causation" class="slide level2 center">
+<h2>Key Insight: Correlation ≠ Causation</h2>
+<h3 id="the-same-data-different-stories">The Same Data, Different Stories</h3>
+<p>Both DAGs can explain the same observed correlation between smoking and lung cancer, but they have very different implications:</p>
+<p><strong>Story 1 (Direct Causation):</strong> - Stop smoking → Reduce lung cancer risk - Intervention on smoking directly affects outcome</p>
+<p><strong>Story 2 (Common Cause):</strong> - Stop smoking → May not reduce lung cancer risk - The genetic predisposition remains unchanged</p>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>🎯 Critical Thinking</strong></p>
+</div>
+<div class="callout-content">
+<p>Understanding the underlying causal structure is essential for making effective interventions and policy decisions.</p>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Emphasize the importance of understanding causal relationships rather than just correlations for making informed decisions.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="appendix-probability-distributions" class="slide level2 center">
+<h2>Appendix: Probability Distributions</h2>
+<h3 id="discrete-uniform-distribution-02">Discrete Uniform Distribution (0,2)</h3>
+<div id="4fccacd9" class="cell" data-fig-dpi="150" data-fig-height="5" data-fig-width="8" data-execution_count="6">
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="randomVariables_files/figure-revealjs/cell-7-output-1.png" width="787" height="471"></p>
+</figure>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Show the probability mass function for a discrete uniform distribution with equal probabilities for each outcome.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="continuous-uniform-distribution-02" class="slide level2 center">
+<h2>Continuous Uniform Distribution (0,2)</h2>
+<div id="2500adcb" class="cell" data-fig-dpi="150" data-fig-height="5" data-fig-width="8" data-execution_count="7">
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="randomVariables_files/figure-revealjs/cell-8-output-1.png" width="804" height="471"></p>
+</figure>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Show the probability density function for a continuous uniform distribution with constant height over the interval.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="continuous-uniform-shaded-area-p0-x-1" class="slide level2 center">
+<h2>Continuous Uniform: Shaded Area P(0 ≤ X ≤ 1)</h2>
+<div id="20380610" class="cell" data-fig-dpi="150" data-fig-height="5" data-fig-width="8" data-execution_count="8">
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="randomVariables_files/figure-revealjs/cell-9-output-1.png" width="760" height="471"></p>
+</figure>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Show the continuous uniform distribution with a highlighted area representing P(0 ≤ X ≤ 1) = 0.5.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="beta-distribution-fx-6x1-x" class="slide level2 center">
+<h2>Beta Distribution: f(x) = 6x(1-x)</h2>
+<div id="729ce372" class="cell" data-fig-dpi="150" data-fig-height="5" data-fig-width="8" data-execution_count="9">
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="randomVariables_files/figure-revealjs/cell-10-output-1.png" width="760" height="471"></p>
+</figure>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Show the Beta distribution with PDF 6x(1-x), which is symmetric and peaks at x = 0.5.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="beta-distribution-shaded-area-p1.25-x-2" class="slide level2 center">
+<h2>Beta Distribution: Shaded Area P(1.25 ≤ X ≤ 2)</h2>
+<div id="e817f803" class="cell" data-fig-dpi="150" data-fig-height="5" data-fig-width="8" data-execution_count="10">
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="randomVariables_files/figure-revealjs/cell-11-output-1.png" width="760" height="471"></p>
+</figure>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Show the Beta distribution with a shaded area outside the support [0,1], demonstrating that P(1.25 ≤ X ≤ 2) = 0.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="binomial-distribution-n35-p0.95" class="slide level2 center">
+<h2>Binomial Distribution: n=35, p=0.95</h2>
+<div id="6d84b686" class="cell" data-fig-dpi="150" data-fig-height="5" data-fig-width="8" data-execution_count="11">
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="randomVariables_files/figure-revealjs/cell-12-output-1.png" width="782" height="472"></p>
+</figure>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Show the binomial distribution with n=35 and p=0.95, which is highly skewed toward the maximum value with probability labels on significant mass points.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
