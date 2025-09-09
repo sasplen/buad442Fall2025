@@ -15,6 +15,6 @@
 ## 🖼️ Portfolio Images
 
 ### Hanging out with friends oustide
-![On the boat with friends](Boating.jpg)
+![On the boat with friends](boating.jpg)
 ### My dog
 [My dog on the laptop](dog.jpg)
