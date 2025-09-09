@@ -14,7 +14,7 @@ This README is automatically generated and updated when changes are made to stud
 | AndrewS | Andrew Szrom | Giants fan.<br>From New Jersey. | [View Portfolio](AndrewS/README.md) | <img src="AndrewS/IMG_5831.jpg" alt="Giants Fan" title="Giants Fan" width="150"> |
 | AryanP | Aryan | I love to listen to music<br>I like going to the gym. | [View Portfolio](AryanP/README.md) | <img src="AryanP/favcar.jpg" alt="Favorite Car" title="Favorite Car" width="150"><img src="AryanP/PP.jpeg" alt="Personal Picture" title="Personal Picture" width="150"> |
 | AvaM | Ava | I studied abroad in Rome last semester!<br>I have two cats. | [View Portfolio](AvaM/README.md) | <img src="AvaM/CIMG4845.jpeg" alt="This is me in Rome!" title="This is me in Rome!" width="150"><img src="AvaM/bubba.png" alt="This is one of my cats! His name is Bubba" title="This is one of my cats! His name is Bubba" width="150"> |
-| ChanceD | Chance | I am a member of the Men's Ice Hockey Team.<br>I like going to the beach and seeing my friends. | [View Portfolio](ChanceD/README.md) | No images |
+| ChanceD | Chance | I am a member of the Men's Ice Hockey Team.<br>I like going to the beach and traveling the world. | [View Portfolio](ChanceD/README.md) | <img src="ChanceD/XO0A9083.jpg" alt="Game_Picture" title="Game_Picture" width="150"><img src="ChanceD/Cancun_Beach.jpg" alt="Favorite Vacation Spot in Cancun" title="Favorite Vacation Spot in Cancun" width="150"> |
 | ChristianCampos | Christian | My favorite sport is soccer.<br>I can bench press 315 lbs. | [View Portfolio](ChristianCampos/README.md) | <img src="ChristianCampos/0D42380A-3CF5-4D43-A5D7-604623B312E8.jpeg" alt="Picture of me playing soccer" title="Picture of me playing soccer" width="150"><img src="ChristianCampos/images.jpg" alt="Bench Press Picture" title="Bench Press Picture" width="150"> |
 | DavidH | David | I enjoy traveling with my family<br>I enjoy spending time with my pets | [View Portfolio](DavidH/README.md) | <img src="DavidH/IMG_5813.jpg" alt="Me at New River Valley Gorge" title="Me at New River Valley Gorge" width="150"><img src="DavidH/IMG_3827.jpg" alt="My dog Benson" title="My dog Benson" width="150"> |
 | EeshaS | Eesha | I have run 5 half-marathons so far<br>I have 2 younger siblings | [View Portfolio](EeshaS/README.md) | <img src="EeshaS/Sunset.jpg" alt="Sunrise" title="Sunrise" width="150"><img src="EeshaS/FAM.jpeg" alt="Family Member" title="Family Member" width="150"> |
@@ -73,4 +73,4 @@ This README is automatically generated and updated when changes are made to stud
 This README is automatically updated via GitHub Actions whenever any `README.md` file in the student-portfolios folder (or its subfolders) is modified.
 
 ---
-*Last updated: %Y->- (HEAD -> main, origin/main) 2f047626d02af6c174517e83120f4a71e39d05f4:%M:HEAD*
+*Last updated: %Y->- (HEAD -> main, origin/main) c7f24f9d442fa3211ead8251dbaa49a288eae948:%M:HEAD*
