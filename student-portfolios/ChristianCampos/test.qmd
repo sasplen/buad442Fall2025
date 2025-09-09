@@ -1,0 +1,14 @@
+---
+title: "My First Quarto Document"
+date: today
+format: html
+---
+
+# Hello World! 👋
+
+This is my first quarto document. My nick name is ChrisC. 
+
+## My Interest in Soccer ⚽
+
+I have a deep passion for soccer that has been a significant part of my life for many years. Whether I'm playing on the field, watching professional matches, or analyzing game strategies, soccer brings me joy and excitement. I love the teamwork, strategy, and athleticism involved in the sport, and I find it to be a great way to stay active and connect with others who share the same enthusiasm. From local pickup games to following major leagues around the world, soccer continues to be one of my favorite activities and interests.
+    
