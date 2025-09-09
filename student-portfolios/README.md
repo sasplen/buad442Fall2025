@@ -27,6 +27,7 @@ This README is automatically generated and updated when changes are made to stud
 | JamesW | James | This summer I got into my first car accident<br>I enjoy skiing and snowboarding in the winter | [View Portfolio](JamesW/README.md) | <img src="JamesW/acura.jpg" alt="The type of car I had" title="The type of car I had" width="150"><img src="JamesW/IMG_8972.jpg" alt="Snowboarding at Blue Mountain" title="Snowboarding at Blue Mountain" width="150"> |
 | JaredW | Jared | I enjoy learning new subjects.<br>I like drawing and playing video games. | [View Portfolio](JaredW/README.md) | <img src="JaredW/videogames.jpg" alt="Gaming" title="Gaming" width="150"><img src="JaredW/studying.jpg" alt="Studying" title="Studying" width="150"> |
 | MackC | Mack | Red/Green Color BLind<br>PLay for the UD Men's Club Ultimate Frisbee Team | [View Portfolio](MackC/README.md) | <img src="MackC/IMG_1264.PNG" alt="Game warmup photo" title="Game warmup photo" width="150"><img src="MackC/IMG_3692.JPG" alt="Photo with dog" title="Photo with dog" width="150"> |
+| MichaelP | Michael | I am a godfather<br>I enjoy spending time with family and exploring th... | [View Portfolio](MichaelP/README.md) | <img src="MichaelP/IMG_1043.jpeg" alt="The Great Outdoors" title="The Great Outdoors" width="150"><img src="MichaelP/IMG_3737.jpg" alt="Me and my Goddaughter" title="Me and my Goddaughter" width="150"> |
 | MichaelS | Michael | I've been to 5 continents!<br>My work has been featured in an art exhibition | [View Portfolio](MichaelS/README.md) | <img src="MichaelS/unnamed.jpg" alt="Zebras" title="Zebras" width="150"> |
 | NickTag | Nick Tag | I have an identical twin brother<br>My hobbies are skiing and golfing. | [View Portfolio](NickTag/README.md) | <img src="NickTag/IMG_0933.jpg" alt="Pictures of the mountains!" title="Pictures of the mountains!" width="150"><img src="NickTag/IMG_8485.JPG" alt="A picture of me and my brothers around the holidays" title="A picture of me and my brothers around the holidays" width="150"> |
 | NickTang | Nick | I love to snowboard<br>I've been to Korea, Japan, China, and Vietnam | [View Portfolio](NickTang/README.md) | <img src="NickTang/Background.jpeg" alt="Blue Mountain" title="Blue Mountain" width="150"><img src="NickTang/Snowboard.jpeg" alt="Korea" title="Korea" width="150"> |
@@ -74,4 +75,4 @@ This README is automatically generated and updated when changes are made to stud
 This README is automatically updated via GitHub Actions whenever any `README.md` file in the student-portfolios folder (or its subfolders) is modified.
 
 ---
-*Last updated: %Y->- (HEAD -> main, origin/main) 9ad99eeae0d769e0096835b28d76b7f9a69df282:%M:HEAD*
+*Last updated: %Y->- (HEAD -> main, origin/main) f13a3c7e57bff65b5123d56a2c61f29e61ce96d2:%M:HEAD*
