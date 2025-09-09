@@ -168,6 +168,20 @@ $$X: \Omega \rightarrow \mathbb{R}$$
 - $X(\text{sunny}) = 1$
 - $X(\text{not sunny}) = 0$
 
+::: {.notes}
+Introduce the formal mathematical definition and notation for random variables.
+:::
+
+---
+
+## Mathematical Formalism (Continued) {.center}
+
+### Key Properties
+
+A **random variable** $X$ is a function that maps the sample space $\Omega$ to the real numbers:
+
+$$X: \Omega \rightarrow \mathbb{R}$$
+
 **Key Properties:**
 
 - Each outcome gets exactly one number
@@ -175,7 +189,7 @@ $$X: \Omega \rightarrow \mathbb{R}$$
 - We can now do mathematical analysis on the numbers
 
 ::: {.notes}
-Introduce the formal mathematical definition and notation for random variables.
+Explain the key properties of random variables and their mathematical implications.
 :::
 
 ---
@@ -184,7 +198,7 @@ Introduce the formal mathematical definition and notation for random variables.
 
 ### Spreading Plausibility Over Outcomes
 
-**Key Insight:** Random variables don't just map outcomes to numbers—we also need to assign **probabilities** to each outcome.
+**Key Insight:** Random variables are most useful when we assign **probabilities** to each outcome.
 
 **Example - Weather Random Variable:**
 
@@ -203,12 +217,17 @@ Introduce the concept that random variables need probability assignments to be u
 
 ### Example: Ice Cream Sales
 
+<br>
+
 | Outcome | Value | Probability |
 |---------|-------|-------------|
 | High sales (>100) | 1 | 0.6 |
 | Low sales (≤100) | 0 | 0.4 |
 
+<br>
+
 **Properties:**
+
 - Each probability ≥ 0
 - Probabilities sum to 1: $0.6 + 0.4 = 1.0$
 
